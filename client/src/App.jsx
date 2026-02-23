@@ -5,18 +5,21 @@ function App() {
         
         {/* Test Custom Colors */}
         <h1 className="text-4xl font-bold text-primary mb-md">
-          Tailwind v3 Working! ✅
+          Hey Its the Simple portfolio
         </h1>
-        
+      
+
         {/* Test Custom Spacing */}
         <div className="space-y-sm">
           <p className="text-secondary">Custom spacing: xs, sm, md, lg, xl, 2xl, 3xl</p>
           
+
           {/* Test Custom Button */}
           <button className="btn-primary">
             Custom Button
           </button>
           
+
           {/* Test Card Component */}
           <div className="card">
             <h2 className="text-xl font-semibold mb-xs">Card Component</h2>
