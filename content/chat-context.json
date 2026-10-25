@@ -1,0 +1,384 @@
+{
+  "updatedAt": "2026-10-25",
+  "description": "Approved portfolio excerpts. First-person passages quote Nilesh. No private source paths or unpublished claims. Review this file when portfolio facts change.",
+  "facts": [
+    {
+      "id": "profile",
+      "title": "About Nilesh",
+      "href": "/#about",
+      "text": "Nilesh Pawar is a Computer Engineering student based in Pune, Maharashtra. He builds backend systems and grounded AI applications and is interested in SDE, AI and GenAI roles."
+    },
+    {
+      "id": "availability",
+      "title": "Work preference",
+      "href": "/#contact",
+      "text": "Nilesh prefers remote opportunities. His expected graduation year is 2027. Salary expectations, immediate joining availability and relocation preferences are not documented."
+    },
+    {
+      "id": "contact",
+      "title": "Contact and resumes",
+      "href": "/#contact",
+      "text": "Contact Nilesh at pawarnil898@gmail.com. AI and GenAI downloads both use NileshPawar_AiEngineerResume.pdf, as confirmed by Nilesh. The original SDE PDF has an outdated TechSonix end date; the confirmed internship dates are January–March 2025."
+    },
+    {
+      "id": "techsonix",
+      "title": "TechSonix internship",
+      "href": "/#experience",
+      "text": "Backend Developer Intern at TechSonix, Jan 2025–Mar 2025. Remote. Node.js/Express API development under senior developer guidance. Stack: Node.js, Express.js, JWT, bcrypt, RBAC, Git. I developed and maintained REST API endpoints with modular routing and middleware under senior developer guidance. I implemented JWT authentication, bcrypt password hashing and role-based access control. I debugged backend issues and collaborated on feature development and code reviews using Git."
+    },
+    {
+      "id": "techking",
+      "title": "TechKing Solutions internship",
+      "href": "/#experience",
+      "text": "Web Developer Intern at TechKing Solutions, Jun 2023–Jul 2023. Not confirmed; resume location: Shirdi, Maharashtra. Hotel Management System booking interfaces and backend data integration. Stack: HTML, CSS, JavaScript, PHP, MySQL. I developed a Hotel Management System with responsive booking interfaces and backend data integration using HTML, CSS, JavaScript, PHP and MySQL."
+    },
+    {
+      "id": "education-0",
+      "title": "Bachelor of Engineering in Computer Engineering",
+      "href": "/#education",
+      "text": "Bachelor of Engineering in Computer Engineering, International Institute of Information Technology (I2IT), Pune. Expected 2027. CGPA: 7."
+    },
+    {
+      "id": "education-1",
+      "title": "Diploma in Computer Engineering",
+      "href": "/#education",
+      "text": "Diploma in Computer Engineering, Sanjivani K.B.P. Polytechnic, Kopargaon. 2024. 90.29%."
+    },
+    {
+      "id": "achievement-0",
+      "title": "Achievement (resume-supported)",
+      "href": "/#education",
+      "text": "I secured 2nd place among 50+ teams at TechMantra Hackathon. Resume-supported; public credential/date pending."
+    },
+    {
+      "id": "achievement-1",
+      "title": "Achievement (resume-supported)",
+      "href": "/#education",
+      "text": "I led a 4-member team for my final-year diploma project. Supported by the cited source; not independently rerun."
+    },
+    {
+      "id": "ai-blog-generator-overview",
+      "title": "AI Blog Generator overview",
+      "href": "/projects/ai-blog-generator/",
+      "text": "AI Blog Generator: Gemini-assisted writing, image uploads and an administrator-controlled publishing workflow. Status: Live. Technologies: React, Node.js, Express.js, MongoDB, Gemini API, ImageKit."
+    },
+    {
+      "id": "ai-blog-generator-1",
+      "title": "AI Blog Generator — The problem",
+      "href": "/projects/ai-blog-generator/",
+      "text": "I integrated AI-assisted drafting into a blog publishing workflow. An administrator can create content, attach an image, choose a category and decide whether a post is published. Visitors can browse the public interface and comment on published content."
+    },
+    {
+      "id": "ai-blog-generator-2",
+      "title": "AI Blog Generator — The problem",
+      "href": "/projects/ai-blog-generator/",
+      "text": "This is an application of a language-model API inside a conventional web product. It is not a custom-trained language model or a retrieval-augmented generation system. The portfolio focuses on the integration and publishing workflow that the repository actually implements."
+    },
+    {
+      "id": "ai-blog-generator-4",
+      "title": "AI Blog Generator — Architecture and data flow",
+      "href": "/projects/ai-blog-generator/",
+      "text": "The React frontend calls Express routes. MongoDB stores blog and comment records, while ImageKit handles uploaded images. An authenticated generation route sends a topic prompt to the server-side Gemini integration and returns generated text to the editor."
+    },
+    {
+      "id": "ai-blog-generator-5",
+      "title": "AI Blog Generator — Architecture and data flow",
+      "href": "/projects/ai-blog-generator/",
+      "text": "The inspected implementation names gemini-2.5-flash and appends a plain-text drafting instruction to the supplied topic. The API key is read on the server. The response returns as one result; the current source does not establish token streaming, a structured-output schema or a multi-step agent."
+    },
+    {
+      "id": "ai-blog-generator-7",
+      "title": "AI Blog Generator — Engineering decisions and limits",
+      "href": "/projects/ai-blog-generator/",
+      "text": "Publishing remains an administrator-controlled action, separate from generating a draft. This gives the workflow a clear point for reviewing generated content before it appears publicly. JWT middleware protects the generation endpoint and the administrative publishing operations."
+    },
+    {
+      "id": "ai-blog-generator-8",
+      "title": "AI Blog Generator — Engineering decisions and limits",
+      "href": "/projects/ai-blog-generator/",
+      "text": "The source also supports publish/unpublish controls, image uploads and comments. A separate resume describes BlogStack with additional features such as likes and bookmarking. I do not attribute those features to this repository until the project versions are reconciled."
+    },
+    {
+      "id": "ai-blog-generator-9",
+      "title": "AI Blog Generator — Engineering decisions and limits",
+      "href": "/projects/ai-blog-generator/",
+      "text": "The current live link loads the public interface. During the audit, no posts appeared in the observation window, and generation required administrator access. This is not a verification of model availability or an end-to-end public demo."
+    },
+    {
+      "id": "ai-blog-generator-11",
+      "title": "AI Blog Generator — Results and next steps",
+      "href": "/projects/ai-blog-generator/",
+      "text": "The repository shows how an LLM call can fit into an existing content-management flow. Its value is the integration between editor, backend, image storage and publishing state, rather than an unsupported claim about generation quality."
+    },
+    {
+      "id": "ai-blog-generator-12",
+      "title": "AI Blog Generator — Results and next steps",
+      "href": "/projects/ai-blog-generator/",
+      "text": "The next improvements are bounded prompts, rate limits, clearer provider failures and a small repeatable evaluation of generated drafts. A documented guest walkthrough and measured latency/cost would make the work easier to assess. None of those future improvements is counted as completed here."
+    },
+    {
+      "id": "dining-master-overview",
+      "title": "Dining Master overview",
+      "href": "/#work",
+      "text": "Dining Master: An earlier restaurant interface with menu, reservation and contact sections. Status: Live. Technologies: HTML, CSS, JavaScript."
+    },
+    {
+      "id": "docmind-overview",
+      "title": "DocMind overview",
+      "href": "/projects/docmind/",
+      "text": "DocMind: Private document Q&A with owner-scoped retrieval and validated source excerpts. Status: Code only. Technologies: Python, FastAPI, PostgreSQL, pgvector, Gemini API, Groq API, React, Docker."
+    },
+    {
+      "id": "docmind-1",
+      "title": "DocMind — The problem",
+      "href": "/projects/docmind/",
+      "text": "I built DocMind to ask questions of private documents while keeping the answer tied to inspectable source evidence. It accepts PDF, DOCX and text files and supports both question answering and summarization. Each account has its own documents and conversations."
+    },
+    {
+      "id": "docmind-2",
+      "title": "DocMind — The problem",
+      "href": "/projects/docmind/",
+      "text": "The important constraint is that plausible language is not enough. A useful answer needs the right owner's source material, valid excerpts and a way to abstain when the available evidence does not support a claim."
+    },
+    {
+      "id": "docmind-4",
+      "title": "DocMind — Architecture and data flow",
+      "href": "/projects/docmind/",
+      "text": "The FastAPI backend queues document ingestion in PostgreSQL. A separate worker parses and chunks the upload, creates Gemini embeddings and stores the resulting vectors with source chunks through pgvector. The current implementation uses normalized 768-dimensional embeddings."
+    },
+    {
+      "id": "docmind-5",
+      "title": "DocMind — Architecture and data flow",
+      "href": "/projects/docmind/",
+      "text": "At query time, retrieval filters by document ownership, readiness and embedding model before ordering by cosine distance. The answer pipeline produces claims with supporting excerpts. It validates source identifiers and exact quotations, then applies an additional entailment check. Failed evidence checks lead to abstention."
+    },
+    {
+      "id": "docmind-7",
+      "title": "DocMind — Engineering decisions and limits",
+      "href": "/projects/docmind/",
+      "text": "Keeping source chunks and vectors in PostgreSQL lets them become visible within one transaction. It also supports atomic deletion rather than leaving a separate vector index out of sync. Durable jobs use leases, bounded retries and stale-worker protection to recover from interrupted ingestion."
+    },
+    {
+      "id": "docmind-8",
+      "title": "DocMind — Engineering decisions and limits",
+      "href": "/projects/docmind/",
+      "text": "The architecture has explicit limits. Scanned PDFs require external OCR. The current system does not execute agent tools, provide public registration or promise support for every complex document layout. An AI grounding check can still make mistakes; it is not a guarantee of hallucination-free output."
+    },
+    {
+      "id": "docmind-9",
+      "title": "DocMind — Engineering decisions and limits",
+      "href": "/projects/docmind/",
+      "text": "An older resume describes ChromaDB. The current public repository implements pgvector, so this case study follows that version rather than blending the two designs."
+    },
+    {
+      "id": "docmind-11",
+      "title": "DocMind — Results and next steps",
+      "href": "/projects/docmind/",
+      "text": "The repository's historical verification record reports 38 PostgreSQL-backed tests with 78% coverage and three Chromium browser tests on September 14, 2026. A later JWT regression used SQLite and reported 52 passed, three skipped and 77% coverage. These are different scopes, not interchangeable headline numbers, and were not rerun for the portfolio."
+    },
+    {
+      "id": "docmind-12",
+      "title": "DocMind — Results and next steps",
+      "href": "/projects/docmind/",
+      "text": "The next step is a representative evaluation set with expected sources, unanswerable questions and failure analysis. Latency and cost should be measured alongside citation quality. DocMind is currently code only, with Docker and local setup instructions available in its repository."
+    },
+    {
+      "id": "eco-bin-overview",
+      "title": "ECO-BIN overview",
+      "href": "/#work",
+      "text": "ECO-BIN: A landing page introducing a community waste-collection service. Status: Live. Technologies: HTML, CSS, JavaScript."
+    },
+    {
+      "id": "hms-portal-overview",
+      "title": "HMS Portal overview",
+      "href": "/projects/hms-portal/",
+      "text": "HMS Portal: A patient and receptionist prototype for appointments, queues and bed allocation. Status: Live. Technologies: React, TypeScript, Zustand, Tailwind CSS, Vite."
+    },
+    {
+      "id": "hms-portal-1",
+      "title": "HMS Portal — The problem",
+      "href": "/projects/hms-portal/",
+      "text": "HMS Portal explores two sides of a hospital workflow: a patient requesting an appointment or admission, and a receptionist managing appointments, queues and beds. I use it here as an interface and state-modeling project."
+    },
+    {
+      "id": "hms-portal-2",
+      "title": "HMS Portal — The problem",
+      "href": "/projects/hms-portal/",
+      "text": "The available repository is a React and TypeScript frontend. Although an older description called it a MERN application, no server or database implementation was found in that source. This case study deliberately describes the browser prototype that a reviewer can inspect."
+    },
+    {
+      "id": "hms-portal-4",
+      "title": "HMS Portal — Architecture and data flow",
+      "href": "/projects/hms-portal/",
+      "text": "The application uses a Zustand store to hold the signed-in demo role, appointment requests, beds and admissions. Patient and receptionist screens read from that shared store and update it through defined actions."
+    },
+    {
+      "id": "hms-portal-5",
+      "title": "HMS Portal — Architecture and data flow",
+      "href": "/projects/hms-portal/",
+      "text": "Appointments start in a pending state. Receptionist actions can update their status. Queue position is computed by filtering approved appointments, sorting them by date and time, and finding the current patient's position. Bed assignment updates both the admission request and the selected bed in browser state."
+    },
+    {
+      "id": "hms-portal-7",
+      "title": "HMS Portal — Engineering decisions and limits",
+      "href": "/projects/hms-portal/",
+      "text": "Putting the workflow into a shared state store makes transitions visible across the interface without introducing a backend. The implementation also checks for duplicate appointment requests with the same patient, date and time."
+    },
+    {
+      "id": "hms-portal-8",
+      "title": "HMS Portal — Engineering decisions and limits",
+      "href": "/projects/hms-portal/",
+      "text": "That scope has important limits. Data is held in memory, so it is not durable across refreshes. Doctors and beds are mock records. The login flow compares credentials from bundled demo data; it is a role demonstration, not secure authentication. There is no evidence of server push, cross-device synchronization or a live clinical queue."
+    },
+    {
+      "id": "hms-portal-9",
+      "title": "HMS Portal — Engineering decisions and limits",
+      "href": "/projects/hms-portal/",
+      "text": "The ordering rule is chronological, not a medical triage algorithm. Admission urgency is represented in the interface, but that should not be interpreted as a validated prioritization system. This application is not presented as suitable for real patient records."
+    },
+    {
+      "id": "hms-portal-11",
+      "title": "HMS Portal — Results and next steps",
+      "href": "/projects/hms-portal/",
+      "text": "The project provides an inspectable model of patient and receptionist screens, appointment approval and bed assignment. The deployed entry point loads, though its page title still uses the Vite template default."
+    },
+    {
+      "id": "hms-portal-12",
+      "title": "HMS Portal — Results and next steps",
+      "href": "/projects/hms-portal/",
+      "text": "The next useful work is to document the demo roles, test state transitions and make persistence limits visible. If a backend is added, ownership checks, durable storage and concurrency-safe updates would need their own implementation and tests. For this portfolio, I keep the project at its demonstrated frontend scope."
+    },
+    {
+      "id": "investify-overview",
+      "title": "Investify overview",
+      "href": "/projects/investify/",
+      "text": "Investify: Risk-based planning, financial goals and stock research in one full-stack application. Status: Live. Technologies: React, Node.js, Express.js, MongoDB."
+    },
+    {
+      "id": "investify-1",
+      "title": "Investify — The problem",
+      "href": "/projects/investify/",
+      "text": "I built Investify as a solo project to bring financial goals and risk-based allocation into one workflow. The aim is to help a visitor organize planning inputs and explore an allocation, rather than leave calculations spread across separate tools. The public application includes a planning interface and an Express/MongoDB backend."
+    },
+    {
+      "id": "investify-2",
+      "title": "Investify — The problem",
+      "href": "/projects/investify/",
+      "text": "A critical constraint is the difference between the public demo and the newer local implementation. The public backend snapshot contains mock stock and mutual-fund data. The newer local version includes provider-backed market research. I keep those versions distinct here: the live link is a public demo, not proof that every local improvement is deployed."
+    },
+    {
+      "id": "investify-4",
+      "title": "Investify — Architecture and data flow",
+      "href": "/projects/investify/",
+      "text": "The React interface collects planning inputs and calls modular Express routes. MongoDB stores application data. The available public code uses JWT authentication and bcrypt password hashing. Its recommendation controller filters predefined market records against inputs such as budget."
+    },
+    {
+      "id": "investify-5",
+      "title": "Investify — Architecture and data flow",
+      "href": "/projects/investify/",
+      "text": "The newer local implementation adds saved goals, watchlists, revision history and Indian-market lookups. Its middleware checks signed bearer tokens against revocable session records. That is different from the cookie-session wording in an earlier resume, so this case study does not merge the two authentication designs."
+    },
+    {
+      "id": "investify-7",
+      "title": "Investify — Engineering decisions and limits",
+      "href": "/projects/investify/",
+      "text": "The local planning implementation uses transactions and conflict detection to preserve revision history. Provider integration adds caching, timeouts, request coalescing and stale-data labels. These mechanisms address concrete failure cases: simultaneous edits, slow external APIs and old prices."
+    },
+    {
+      "id": "investify-8",
+      "title": "Investify — Engineering decisions and limits",
+      "href": "/projects/investify/",
+      "text": "Those are local-code capabilities. The public repository must be brought into alignment before a reader can verify the complete newer architecture from GitHub alone. The deployed landing page also contains marketing figures that I have not established with usage evidence; they are not portfolio results."
+    },
+    {
+      "id": "investify-10",
+      "title": "Investify — Results and next steps",
+      "href": "/projects/investify/",
+      "text": "The application demonstrates a full-stack planning workflow and a deeper local iteration on data integrity. Historical local verification records include backend, calculation and browser checks, but their counts differ from the resume and are not presented as a current aggregate."
+    },
+    {
+      "id": "investify-11",
+      "title": "Investify — Results and next steps",
+      "href": "/projects/investify/",
+      "text": "My next step is to align the public source, deployed version and documentation, then provide a read-only walkthrough and a reproducible latency measurement. Until then, this page makes the version boundary explicit."
+    },
+    {
+      "id": "resolvedesk-overview",
+      "title": "ResolveDesk overview",
+      "href": "/projects/resolvedesk/",
+      "text": "ResolveDesk: A support agent with checkpointed human approval and replay-safe simulated actions. Status: Code only. Technologies: Python, FastAPI, React, LangChain, LangGraph, PostgreSQL."
+    },
+    {
+      "id": "resolvedesk-1",
+      "title": "ResolveDesk — The problem",
+      "href": "/projects/resolvedesk/",
+      "text": "I built ResolveDesk to investigate an order issue, check the return policy and propose a resolution without allowing a model to execute an action on its own. The application is a learning demo: refunds are simulated database records, not payments."
+    },
+    {
+      "id": "resolvedesk-2",
+      "title": "ResolveDesk — The problem",
+      "href": "/projects/resolvedesk/",
+      "text": "The key requirement is that an approval must survive interruptions and retries. A repeated request should not create a second refund, and conversational text should not bypass the explicit approval step."
+    },
+    {
+      "id": "resolvedesk-4",
+      "title": "ResolveDesk — Architecture and data flow",
+      "href": "/projects/resolvedesk/",
+      "text": "A FastAPI backend exposes owned orders and conversations to a React interface. The agent uses LangChain and LangGraph with PostgreSQL checkpoints. Read tools investigate the order and policy; a proposal becomes a saved action that interrupts the graph for human review."
+    },
+    {
+      "id": "resolvedesk-5",
+      "title": "ResolveDesk — Architecture and data flow",
+      "href": "/projects/resolvedesk/",
+      "text": "The frontend receives streamed workflow events and presents the pending decision. An authenticated approval resumes the workflow and reaches the transaction that records the simulated refund. A rejection returns a terminal result without executing the refund."
+    },
+    {
+      "id": "resolvedesk-7",
+      "title": "ResolveDesk — Engineering decisions and limits",
+      "href": "/projects/resolvedesk/",
+      "text": "The graph separates proposal, approval and execution. The execution node checks for an approved decision, while the transaction layer handles ownership, eligibility and replay safety. Checkpoint recovery and stable terminal results make interrupted delivery distinguishable from a failed action."
+    },
+    {
+      "id": "resolvedesk-8",
+      "title": "ResolveDesk — Engineering decisions and limits",
+      "href": "/projects/resolvedesk/",
+      "text": "The local implementation includes tests around approval bypass, replay, conflicting decisions and recovery after a commit. This is stronger evidence than a successful happy-path conversation alone, but it does not establish production scale."
+    },
+    {
+      "id": "resolvedesk-9",
+      "title": "ResolveDesk — Engineering decisions and limits",
+      "href": "/projects/resolvedesk/",
+      "text": "The scope is deliberately small: one backend worker, one model provider, INR-only full-order simulated refunds and no real payment integration. No public deployment or public repository has been verified for this version. The work is described from the local source and its implementation records."
+    },
+    {
+      "id": "resolvedesk-11",
+      "title": "ResolveDesk — Results and next steps",
+      "href": "/projects/resolvedesk/",
+      "text": "The local phase tracker records completed implementation and recovery work through Phase 9. It also records final evaluation and handoff as unfinished. Although the resume mentions LangSmith evaluation, this portfolio does not present that evaluation as complete."
+    },
+    {
+      "id": "resolvedesk-12",
+      "title": "ResolveDesk — Results and next steps",
+      "href": "/projects/resolvedesk/",
+      "text": "The next step is to finish the existing opt-in evaluation scenarios, publish actual traces and measurements, and provide a reviewable repository or short recorded demonstration. Tool selection, policy compliance, duplicate decisions and provider failure should all be evaluated explicitly. Until that evidence is available, the portfolio distinguishes the implemented workflow from its pending final evaluation."
+    },
+    {
+      "id": "studyforge-overview",
+      "title": "StudyForge / AI Notes Generator overview",
+      "href": "/#work",
+      "text": "StudyForge / AI Notes Generator: A study assistant that generates notes, MCQs, cheat sheets and flashcards. Status: Code only. Technologies: Python, Streamlit, Groq API, xhtml2pdf, python-docx."
+    },
+    {
+      "id": "skills-familiar",
+      "title": "Familiar tools (resume-listed)",
+      "href": "/#skills",
+      "text": "Resume-listed familiarity only, not demonstrated project expertise: SQL, Java, C, C++, SQLAlchemy, Redis, Oracle, Prisma ORM, ChromaDB, Pinecone, FAISS, NVIDIA Nemotron, LangSmith, Ragas, Redux, Context API, Bootstrap, Responsive Design, WebSockets, AWS, Render, Railway, Postman, Swagger, XAMPP, Chrome DevTools, Data Structures & Algorithms, OOP, DBMS, Operating Systems, Computer Networks, System Design Basics."
+    },
+    {
+      "id": "skills-demonstrated",
+      "title": "Skills linked to reviewed work",
+      "href": "/#skills",
+      "text": "Skills with internship or project evidence: Node.js, Express.js, REST APIs, JWT, bcrypt, RBAC, PHP, MySQL, HTML, CSS, JavaScript, Python, FastAPI, PostgreSQL, pgvector, Docker, RAG, Embeddings & Vector Search, Gemini API, Groq API, Prompt Engineering, LangChain, LangGraph, Tool Calling, React, Tailwind CSS, TypeScript, Vite, MongoDB, Mongoose, Git, GitHub, CI/CD, Vercel, Netlify, Unit/API/Browser Testing. See the skills section for the project associated with each tool."
+    }
+  ]
+}

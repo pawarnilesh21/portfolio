@@ -1,16 +1,8 @@
-import Achievements from "@/components/achievements"
-import type { Metadata } from "next"
-
-export const metadata: Metadata = {
-  title: "Achievements | Nilesh Pawar",
-  description: "Academic achievements and certifications of Nilesh Pawar",
+import { LegacyRoute } from "@/components/legacy-route";
+export const metadata = {
+  title: "Education & achievements",
+  robots: { index: false, follow: true },
+};
+export default function Page() {
+  return <LegacyRoute section="education" title="Education & achievements" />;
 }
-
-export default function AchievementsPage() {
-  return (
-    <main className="container mx-auto px-4 py-12">
-      <Achievements />
-    </main>
-  )
-}
-

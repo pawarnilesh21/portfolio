@@ -1,0 +1,10 @@
+node_modules
+.next
+out
+legacy
+.audit-cache
+docs/evidence
+package-lock.json
+
+# JSON frontmatter must remain strict JSON (MDX formatter treats it as YAML).
+content/projects/*.mdx

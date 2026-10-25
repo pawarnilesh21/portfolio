@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-25T15:30:27.489Z",
+  "scores": {
+    "performance": 58,
+    "accessibility": 96,
+    "best-practices": 100,
+    "seo": 66,
+    "agentic-browsing": 100
+  },
+  "note": "Initial local run before CSS scope, compression and contrast fixes. Indexing intentionally disabled."
+}

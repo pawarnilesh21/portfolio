@@ -1,0 +1,67 @@
+---
+{
+  "id": "studyforge",
+  "title": "StudyForge / AI Notes Generator",
+  "tier": "B",
+  "priority": 8,
+  "roles": [
+    "ai",
+    "genai"
+  ],
+  "status": "Code only",
+  "summary": "A study assistant that generates notes, MCQs, cheat sheets and flashcards.",
+  "stack": [
+    "Python",
+    "Streamlit",
+    "Groq API",
+    "xhtml2pdf",
+    "python-docx"
+  ],
+  "repositories": [
+    "https://github.com/pawarnilesh21/AI_Study_Notes_Generator"
+  ],
+  "liveUrl": null,
+  "liveCheckedAt": null,
+  "liveScope": "Local or repository code only; no public runnable deployment verified.",
+  "sources": [
+    "python-resume",
+    "sde-resume",
+    "study-repo"
+  ],
+  "claims": [
+    {
+      "text": "The available code uses Streamlit and Groq to generate four study formats.",
+      "sources": [
+        "study-repo"
+      ],
+      "state": "verified",
+      "publish": true,
+      "note": "Supported by the cited source; not independently rerun."
+    },
+    {
+      "text": "React/Node stack and clean PDF export are not proven by the current public project snapshot.",
+      "sources": [
+        "python-resume",
+        "study-repo"
+      ],
+      "state": "conflict",
+      "publish": false,
+      "note": "app.py imports a PDF helper absent as source at the referenced utils path."
+    }
+  ],
+  "metrics": [],
+  "todos": [
+    "study-version"
+  ],
+  "category": "AI APPLICATIONS",
+  "focus": "Generate · Export",
+  "diagram": [
+    "Topic & difficulty",
+    "Groq API",
+    "Study formats",
+    "PDF / DOCX"
+  ]
+}
+---
+
+Earlier work. See the project scope and source links.

@@ -1,16 +1,59 @@
-import Projects from "@/components/projects"
-import type { Metadata } from "next"
-
+import type { Metadata } from "next";
+import { getContent } from "@/content";
+import { PortfolioHome, type PublicProject } from "@/components/portfolio-home";
+import { absolute, siteUrl } from "@/lib/site";
 export const metadata: Metadata = {
-  title: "Projects | Nilesh Pawar",
-  description: "Portfolio of projects developed by Nilesh Pawar",
-}
-
-export default function ProjectsPage() {
+  title: "Projects",
+  description:
+    "Backend systems, document intelligence and agent workflows by Nilesh Pawar.",
+  alternates: siteUrl ? { canonical: absolute("/projects/") } : undefined,
+};
+export default function Projects() {
+  const { portfolio: p } = getContent();
+  const projects: PublicProject[] = p.projects.map(
+    ({
+      id,
+      title,
+      tier,
+      priority,
+      roles,
+      status,
+      summary,
+      stack,
+      repositories,
+      liveUrl,
+      category,
+      focus,
+      diagram,
+    }) => ({
+      id,
+      title,
+      tier,
+      priority,
+      roles,
+      status,
+      summary,
+      stack,
+      repositories,
+      liveUrl,
+      category,
+      focus,
+      diagram,
+    }),
+  );
+  const resumes = Object.fromEntries(
+    Object.entries(p.resumeByRole).map(([role, id]) => [
+      role,
+      p.resumes.find((r) => r.id === id)!.publicPath,
+    ]),
+  ) as Record<"balanced" | "sde" | "ai" | "genai", string>;
   return (
-    <main className="container mx-auto px-4 py-12">
-      <Projects />
-    </main>
-  )
+    <PortfolioHome
+      projects={projects}
+      skills={[]}
+      order={p.lenses}
+      resumes={resumes}
+      projectsOnly
+    />
+  );
 }
-

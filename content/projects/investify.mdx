@@ -1,0 +1,103 @@
+---
+{
+  "id": "investify",
+  "title": "Investify",
+  "tier": "A",
+  "priority": 1,
+  "roles": [
+    "sde"
+  ],
+  "status": "Live",
+  "summary": "Risk-based planning, financial goals and stock research in one full-stack application.",
+  "stack": [
+    "React",
+    "Node.js",
+    "Express.js",
+    "MongoDB"
+  ],
+  "repositories": [
+    "https://github.com/pawarnilesh21/Investify-FrontEnd",
+    "https://github.com/pawarnilesh21/Investify-Backend"
+  ],
+  "liveUrl": "https://investiify.netlify.app/",
+  "liveCheckedAt": "2026-10-25",
+  "liveScope": "Public landing page returned HTTP 200; protected or backend flows not certified.",
+  "sources": [
+    "ai-resume",
+    "investify-public",
+    "investify-local",
+    "browser"
+  ],
+  "claims": [
+    {
+      "text": "I built Investify solo to support financial goals and risk-based allocation.",
+      "sources": [
+        "ai-resume",
+        "python-resume"
+      ],
+      "state": "resume",
+      "publish": true,
+      "note": "Supported by the cited source; not independently rerun."
+    },
+    {
+      "text": "The newer local version includes plan revisions, goals/watchlists, provider timeouts and cached market lookups.",
+      "sources": [
+        "investify-local"
+      ],
+      "state": "verified",
+      "publish": false,
+      "note": "Verified local scope; public repository/deployment is older."
+    },
+    {
+      "text": "Revocable cookie sessions, JWT/RBAC and bearer JWT descriptions refer to conflicting versions.",
+      "sources": [
+        "ai-resume",
+        "python-resume",
+        "investify-local"
+      ],
+      "state": "conflict",
+      "publish": false,
+      "note": "User confirmation required."
+    }
+  ],
+  "metrics": [],
+  "todos": [
+    "investify-version",
+    "investify-auth",
+    "investify-metrics",
+    "investify-demo"
+  ],
+  "category": "FULL-STACK ENGINEERING",
+  "focus": "Planning · Data integrity",
+  "diagram": [
+    "Planning inputs",
+    "React interface",
+    "Express API",
+    "MongoDB"
+  ]
+}
+---
+
+## The problem
+
+I built Investify as a solo project to bring financial goals and risk-based allocation into one workflow. The aim is to help a visitor organize planning inputs and explore an allocation, rather than leave calculations spread across separate tools. The public application includes a planning interface and an Express/MongoDB backend.
+
+A critical constraint is the difference between the public demo and the newer local implementation. The public backend snapshot contains mock stock and mutual-fund data. The newer local version includes provider-backed market research. I keep those versions distinct here: the live link is a public demo, not proof that every local improvement is deployed.
+
+## Architecture and data flow
+
+The React interface collects planning inputs and calls modular Express routes. MongoDB stores application data. The available public code uses JWT authentication and bcrypt password hashing. Its recommendation controller filters predefined market records against inputs such as budget.
+
+The newer local implementation adds saved goals, watchlists, revision history and Indian-market lookups. Its middleware checks signed bearer tokens against revocable session records. That is different from the cookie-session wording in an earlier resume, so this case study does not merge the two authentication designs.
+
+## Engineering decisions and limits
+
+The local planning implementation uses transactions and conflict detection to preserve revision history. Provider integration adds caching, timeouts, request coalescing and stale-data labels. These mechanisms address concrete failure cases: simultaneous edits, slow external APIs and old prices.
+
+Those are local-code capabilities. The public repository must be brought into alignment before a reader can verify the complete newer architecture from GitHub alone. The deployed landing page also contains marketing figures that I have not established with usage evidence; they are not portfolio results.
+
+## Results and next steps
+
+The application demonstrates a full-stack planning workflow and a deeper local iteration on data integrity. Historical local verification records include backend, calculation and browser checks, but their counts differ from the resume and are not presented as a current aggregate.
+
+My next step is to align the public source, deployed version and documentation, then provide a read-only walkthrough and a reproducible latency measurement. Until then, this page makes the version boundary explicit.

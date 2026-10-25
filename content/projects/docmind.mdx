@@ -1,0 +1,131 @@
+---
+{
+  "id": "docmind",
+  "title": "DocMind",
+  "tier": "A",
+  "priority": 6,
+  "roles": [
+    "ai",
+    "genai",
+    "sde"
+  ],
+  "status": "Code only",
+  "summary": "Private document Q&A with owner-scoped retrieval and validated source excerpts.",
+  "stack": [
+    "Python",
+    "FastAPI",
+    "PostgreSQL",
+    "pgvector",
+    "Gemini API",
+    "Groq API",
+    "React",
+    "Docker"
+  ],
+  "repositories": [
+    "https://github.com/pawarnilesh21/DocMind"
+  ],
+  "liveUrl": null,
+  "liveCheckedAt": null,
+  "liveScope": "Local or repository code only; no public runnable deployment verified.",
+  "sources": [
+    "ai-resume",
+    "docmind-repo",
+    "docmind-tests"
+  ],
+  "claims": [
+    {
+      "text": "I built document Q&A and summarization for PDF, DOCX and text using owner-scoped pgvector retrieval.",
+      "sources": [
+        "ai-resume",
+        "docmind-repo"
+      ],
+      "state": "verified",
+      "publish": true,
+      "note": "Supported by the cited source; not independently rerun."
+    },
+    {
+      "text": "A durable ingestion worker uses bounded retries and transactional indexing; answers validate quotations and cited sources before an entailment check.",
+      "sources": [
+        "docmind-repo"
+      ],
+      "state": "verified",
+      "publish": true,
+      "note": "Supported by the cited source; not independently rerun."
+    },
+    {
+      "text": "Older ChromaDB and newer pgvector descriptions must not be combined.",
+      "sources": [
+        "python-resume",
+        "docmind-repo"
+      ],
+      "state": "conflict",
+      "publish": false,
+      "note": "Current public code establishes pgvector; confirmation remains recorded."
+    }
+  ],
+  "metrics": [
+    {
+      "label": "Backend verification",
+      "value": "38 tests passed; 78% coverage",
+      "source": "docmind-tests",
+      "measuredAt": "2026-09-14",
+      "scope": "Historical isolated PostgreSQL/pgvector run; not rerun during this portfolio audit.",
+      "publish": true
+    },
+    {
+      "label": "Browser verification",
+      "value": "3 Chromium tests",
+      "source": "docmind-tests",
+      "measuredAt": "2026-09-14",
+      "scope": "Historical frontend tests with mocked API; not full live model evaluation.",
+      "publish": true
+    },
+    {
+      "label": "JWT regression",
+      "value": "52 passed; 3 skipped; 77% coverage",
+      "source": "docmind-tests",
+      "measuredAt": "2026-09-29",
+      "scope": "Later SQLite run; not equivalent to the PostgreSQL run; not rerun here.",
+      "publish": true
+    }
+  ],
+  "todos": [
+    "docmind-version",
+    "docmind-metrics"
+  ],
+  "category": "AI / RETRIEVAL SYSTEMS",
+  "focus": "Retrieve · Validate · Cite",
+  "diagram": [
+    "Private documents",
+    "Ingestion worker",
+    "pgvector retrieval",
+    "Validated citations"
+  ]
+}
+---
+
+## The problem
+
+I built DocMind to ask questions of private documents while keeping the answer tied to inspectable source evidence. It accepts PDF, DOCX and text files and supports both question answering and summarization. Each account has its own documents and conversations.
+
+The important constraint is that plausible language is not enough. A useful answer needs the right owner's source material, valid excerpts and a way to abstain when the available evidence does not support a claim.
+
+## Architecture and data flow
+
+The FastAPI backend queues document ingestion in PostgreSQL. A separate worker parses and chunks the upload, creates Gemini embeddings and stores the resulting vectors with source chunks through pgvector. The current implementation uses normalized 768-dimensional embeddings.
+
+At query time, retrieval filters by document ownership, readiness and embedding model before ordering by cosine distance. The answer pipeline produces claims with supporting excerpts. It validates source identifiers and exact quotations, then applies an additional entailment check. Failed evidence checks lead to abstention.
+
+## Engineering decisions and limits
+
+Keeping source chunks and vectors in PostgreSQL lets them become visible within one transaction. It also supports atomic deletion rather than leaving a separate vector index out of sync. Durable jobs use leases, bounded retries and stale-worker protection to recover from interrupted ingestion.
+
+The architecture has explicit limits. Scanned PDFs require external OCR. The current system does not execute agent tools, provide public registration or promise support for every complex document layout. An AI grounding check can still make mistakes; it is not a guarantee of hallucination-free output.
+
+An older resume describes ChromaDB. The current public repository implements pgvector, so this case study follows that version rather than blending the two designs.
+
+## Results and next steps
+
+The repository's historical verification record reports 38 PostgreSQL-backed tests with 78% coverage and three Chromium browser tests on September 14, 2026. A later JWT regression used SQLite and reported 52 passed, three skipped and 77% coverage. These are different scopes, not interchangeable headline numbers, and were not rerun for the portfolio.
+
+The next step is a representative evaluation set with expected sources, unanswerable questions and failure analysis. Latency and cost should be measured alongside citation quality. DocMind is currently code only, with Docker and local setup instructions available in its repository.

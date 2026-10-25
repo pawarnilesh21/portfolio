@@ -1,0 +1,103 @@
+---
+{
+  "id": "ai-blog-generator",
+  "title": "AI Blog Generator",
+  "tier": "A",
+  "priority": 2,
+  "roles": [
+    "sde",
+    "genai"
+  ],
+  "status": "Live",
+  "summary": "Gemini-assisted writing, image uploads and an administrator-controlled publishing workflow.",
+  "stack": [
+    "React",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Gemini API",
+    "ImageKit"
+  ],
+  "repositories": [
+    "https://github.com/pawarnilesh21/AI-Enable-Blog-Generator"
+  ],
+  "liveUrl": "https://ai-enable-blog-generator.vercel.app/",
+  "liveCheckedAt": "2026-10-25",
+  "liveScope": "Public landing page returned HTTP 200; protected or backend flows not certified.",
+  "sources": [
+    "blog-repo",
+    "sde-resume",
+    "browser"
+  ],
+  "claims": [
+    {
+      "text": "I integrated Gemini-generated drafts into an admin blog publishing workflow.",
+      "sources": [
+        "blog-repo",
+        "sde-resume"
+      ],
+      "state": "verified",
+      "publish": true,
+      "note": "Supported by the cited source; not independently rerun."
+    },
+    {
+      "text": "The code supports image uploads, publish/unpublish controls, search and comments.",
+      "sources": [
+        "blog-repo"
+      ],
+      "state": "verified",
+      "publish": true,
+      "note": "Supported by the cited source; not independently rerun."
+    },
+    {
+      "text": "Nested comments, likes and bookmarking are not established by this repository.",
+      "sources": [
+        "sde-resume",
+        "blog-repo"
+      ],
+      "state": "conflict",
+      "publish": false,
+      "note": "Separate BlogStack identity needs confirmation."
+    }
+  ],
+  "metrics": [],
+  "todos": [
+    "blog-identity",
+    "blog-evaluation"
+  ],
+  "category": "GENERATIVE AI",
+  "focus": "Draft · Review · Publish",
+  "diagram": [
+    "Topic prompt",
+    "Authenticated API",
+    "Gemini draft",
+    "Editor & publishing"
+  ]
+}
+---
+
+## The problem
+
+I integrated AI-assisted drafting into a blog publishing workflow. An administrator can create content, attach an image, choose a category and decide whether a post is published. Visitors can browse the public interface and comment on published content.
+
+This is an application of a language-model API inside a conventional web product. It is not a custom-trained language model or a retrieval-augmented generation system. The portfolio focuses on the integration and publishing workflow that the repository actually implements.
+
+## Architecture and data flow
+
+The React frontend calls Express routes. MongoDB stores blog and comment records, while ImageKit handles uploaded images. An authenticated generation route sends a topic prompt to the server-side Gemini integration and returns generated text to the editor.
+
+The inspected implementation names gemini-2.5-flash and appends a plain-text drafting instruction to the supplied topic. The API key is read on the server. The response returns as one result; the current source does not establish token streaming, a structured-output schema or a multi-step agent.
+
+## Engineering decisions and limits
+
+Publishing remains an administrator-controlled action, separate from generating a draft. This gives the workflow a clear point for reviewing generated content before it appears publicly. JWT middleware protects the generation endpoint and the administrative publishing operations.
+
+The source also supports publish/unpublish controls, image uploads and comments. A separate resume describes BlogStack with additional features such as likes and bookmarking. I do not attribute those features to this repository until the project versions are reconciled.
+
+The current live link loads the public interface. During the audit, no posts appeared in the observation window, and generation required administrator access. This is not a verification of model availability or an end-to-end public demo.
+
+## Results and next steps
+
+The repository shows how an LLM call can fit into an existing content-management flow. Its value is the integration between editor, backend, image storage and publishing state, rather than an unsupported claim about generation quality.
+
+The next improvements are bounded prompts, rate limits, clearer provider failures and a small repeatable evaluation of generated drafts. A documented guest walkthrough and measured latency/cost would make the work easier to assess. None of those future improvements is counted as completed here.

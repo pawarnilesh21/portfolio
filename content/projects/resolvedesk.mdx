@@ -1,0 +1,104 @@
+---
+{
+  "id": "resolvedesk",
+  "title": "ResolveDesk",
+  "tier": "A",
+  "priority": 7,
+  "roles": [
+    "genai",
+    "ai",
+    "sde"
+  ],
+  "status": "Code only",
+  "summary": "A support agent with checkpointed human approval and replay-safe simulated actions.",
+  "stack": [
+    "Python",
+    "FastAPI",
+    "React",
+    "LangChain",
+    "LangGraph",
+    "PostgreSQL"
+  ],
+  "repositories": [],
+  "liveUrl": null,
+  "liveCheckedAt": null,
+  "liveScope": "Local or repository code only; no public runnable deployment verified.",
+  "sources": [
+    "ai-resume",
+    "resolvedesk-local",
+    "resolvedesk-graph",
+    "resolvedesk-phases"
+  ],
+  "claims": [
+    {
+      "text": "I built a tool-calling support workflow with checkpointed approval and replay-safe simulated refund actions.",
+      "sources": [
+        "ai-resume",
+        "resolvedesk-graph",
+        "resolvedesk-local"
+      ],
+      "state": "verified",
+      "publish": true,
+      "note": "Supported by the cited source; not independently rerun."
+    },
+    {
+      "text": "Refunds are demo records, not real payments; the project uses a single backend worker.",
+      "sources": [
+        "resolvedesk-local"
+      ],
+      "state": "verified",
+      "publish": true,
+      "note": "Supported by the cited source; not independently rerun."
+    },
+    {
+      "text": "Completed LangSmith evaluation is claimed in the resume, but final evaluation evidence is unfinished in the phase tracker.",
+      "sources": [
+        "ai-resume",
+        "resolvedesk-phases"
+      ],
+      "state": "conflict",
+      "publish": false,
+      "note": "Keep evaluation completion out of public copy."
+    }
+  ],
+  "metrics": [],
+  "todos": [
+    "resolvedesk-repo",
+    "resolvedesk-eval"
+  ],
+  "category": "AGENT ENGINEERING",
+  "focus": "Propose · Approve · Execute",
+  "diagram": [
+    "Owned order",
+    "Tool investigation",
+    "Human approval",
+    "Simulated refund"
+  ]
+}
+---
+
+## The problem
+
+I built ResolveDesk to investigate an order issue, check the return policy and propose a resolution without allowing a model to execute an action on its own. The application is a learning demo: refunds are simulated database records, not payments.
+
+The key requirement is that an approval must survive interruptions and retries. A repeated request should not create a second refund, and conversational text should not bypass the explicit approval step.
+
+## Architecture and data flow
+
+A FastAPI backend exposes owned orders and conversations to a React interface. The agent uses LangChain and LangGraph with PostgreSQL checkpoints. Read tools investigate the order and policy; a proposal becomes a saved action that interrupts the graph for human review.
+
+The frontend receives streamed workflow events and presents the pending decision. An authenticated approval resumes the workflow and reaches the transaction that records the simulated refund. A rejection returns a terminal result without executing the refund.
+
+## Engineering decisions and limits
+
+The graph separates proposal, approval and execution. The execution node checks for an approved decision, while the transaction layer handles ownership, eligibility and replay safety. Checkpoint recovery and stable terminal results make interrupted delivery distinguishable from a failed action.
+
+The local implementation includes tests around approval bypass, replay, conflicting decisions and recovery after a commit. This is stronger evidence than a successful happy-path conversation alone, but it does not establish production scale.
+
+The scope is deliberately small: one backend worker, one model provider, INR-only full-order simulated refunds and no real payment integration. No public deployment or public repository has been verified for this version. The work is described from the local source and its implementation records.
+
+## Results and next steps
+
+The local phase tracker records completed implementation and recovery work through Phase 9. It also records final evaluation and handoff as unfinished. Although the resume mentions LangSmith evaluation, this portfolio does not present that evaluation as complete.
+
+The next step is to finish the existing opt-in evaluation scenarios, publish actual traces and measurements, and provide a reviewable repository or short recorded demonstration. Tool selection, policy compliance, duplicate decisions and provider failure should all be evaluated explicitly. Until that evidence is available, the portfolio distinguishes the implemented workflow from its pending final evaluation.

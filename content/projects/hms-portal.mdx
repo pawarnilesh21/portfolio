@@ -1,0 +1,99 @@
+---
+{
+  "id": "hms-portal",
+  "title": "HMS Portal",
+  "tier": "A",
+  "priority": 3,
+  "roles": [
+    "sde"
+  ],
+  "status": "Live",
+  "summary": "A patient and receptionist prototype for appointments, queues and bed allocation.",
+  "stack": [
+    "React",
+    "TypeScript",
+    "Zustand",
+    "Tailwind CSS",
+    "Vite"
+  ],
+  "repositories": [
+    "https://github.com/pawarnilesh21/hms-portal"
+  ],
+  "liveUrl": "https://hmsportal.netlify.app/",
+  "liveCheckedAt": "2026-10-25",
+  "liveScope": "Public landing page returned HTTP 200; protected or backend flows not certified.",
+  "sources": [
+    "hms-repo",
+    "inventory",
+    "browser"
+  ],
+  "claims": [
+    {
+      "text": "The frontend models patient/receptionist flows, appointment approval and bed assignment.",
+      "sources": [
+        "hms-repo"
+      ],
+      "state": "verified",
+      "publish": true,
+      "note": "Supported by the cited source; not independently rerun."
+    },
+    {
+      "text": "Queue position is derived from approved appointments sorted by date and time in browser memory.",
+      "sources": [
+        "hms-repo"
+      ],
+      "state": "verified",
+      "publish": true,
+      "note": "Supported by the cited source; not independently rerun."
+    },
+    {
+      "text": "The supplied MERN description is not supported by the available frontend repository.",
+      "sources": [
+        "inventory",
+        "hms-repo"
+      ],
+      "state": "conflict",
+      "publish": false,
+      "note": "Do not claim a server-backed hospital system."
+    }
+  ],
+  "metrics": [],
+  "todos": [
+    "hms-scope"
+  ],
+  "category": "APPLICATION ENGINEERING",
+  "focus": "Roles · State transitions",
+  "diagram": [
+    "Patient request",
+    "Shared state",
+    "Receptionist review",
+    "Queue & bed status"
+  ]
+}
+---
+
+## The problem
+
+HMS Portal explores two sides of a hospital workflow: a patient requesting an appointment or admission, and a receptionist managing appointments, queues and beds. I use it here as an interface and state-modeling project.
+
+The available repository is a React and TypeScript frontend. Although an older description called it a MERN application, no server or database implementation was found in that source. This case study deliberately describes the browser prototype that a reviewer can inspect.
+
+## Architecture and data flow
+
+The application uses a Zustand store to hold the signed-in demo role, appointment requests, beds and admissions. Patient and receptionist screens read from that shared store and update it through defined actions.
+
+Appointments start in a pending state. Receptionist actions can update their status. Queue position is computed by filtering approved appointments, sorting them by date and time, and finding the current patient's position. Bed assignment updates both the admission request and the selected bed in browser state.
+
+## Engineering decisions and limits
+
+Putting the workflow into a shared state store makes transitions visible across the interface without introducing a backend. The implementation also checks for duplicate appointment requests with the same patient, date and time.
+
+That scope has important limits. Data is held in memory, so it is not durable across refreshes. Doctors and beds are mock records. The login flow compares credentials from bundled demo data; it is a role demonstration, not secure authentication. There is no evidence of server push, cross-device synchronization or a live clinical queue.
+
+The ordering rule is chronological, not a medical triage algorithm. Admission urgency is represented in the interface, but that should not be interpreted as a validated prioritization system. This application is not presented as suitable for real patient records.
+
+## Results and next steps
+
+The project provides an inspectable model of patient and receptionist screens, appointment approval and bed assignment. The deployed entry point loads, though its page title still uses the Vite template default.
+
+The next useful work is to document the demo roles, test state transitions and make persistence limits visible. If a backend is added, ownership checks, durable storage and concurrency-safe updates would need their own implementation and tests. For this portfolio, I keep the project at its demonstrated frontend scope.

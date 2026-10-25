@@ -1,16 +1,8 @@
-import Skills from "@/components/skills"
-import type { Metadata } from "next"
-
-export const metadata: Metadata = {
-  title: "Skills | Nilesh Pawar",
-  description: "Technical and soft skills of Nilesh Pawar",
+import { LegacyRoute } from "@/components/legacy-route";
+export const metadata = {
+  title: "Skills",
+  robots: { index: false, follow: true },
+};
+export default function Page() {
+  return <LegacyRoute section="skills" title="Skills" />;
 }
-
-export default function SkillsPage() {
-  return (
-    <main className="container mx-auto px-4 py-12">
-      <Skills />
-    </main>
-  )
-}
-

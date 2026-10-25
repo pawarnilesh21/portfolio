@@ -18,6 +18,7 @@ yarn-error.log*
 
 # env files
 .env*
+!.env.example
 
 # vercel
 .vercel
@@ -32,3 +33,6 @@ next-env.d.ts
 /docs/evidence/*.png
 /docs/evidence/lighthouse-*.json
 /docs/evidence/*--*.txt
+/test-results/
+/playwright-report/
+/.lighthouseci/
