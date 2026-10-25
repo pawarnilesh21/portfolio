@@ -25,3 +25,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Local audit tooling and intermediate files
+/.audit-cache/
+/tmp/
+/docs/evidence/*.png
+/docs/evidence/lighthouse-*.json
+/docs/evidence/*--*.txt

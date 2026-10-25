@@ -1,0 +1,446 @@
+[
+  {
+    "name": "portfolio",
+    "url": "http://localhost:3000/",
+    "status": 200,
+    "loadMs": 638,
+    "title": "Nilesh Pawar | Portfolio",
+    "text": "Nilesh Pawar\nPORTFOLIO\nNilesh Pawar\n\nAspiring Software Engineer | Tech Enthusiast | Problem Solver\n\nHello I am Nilesh Pawar a 3rd year Computer Engineering student passionate about creating impactful solutions through technology and innovation\n\nView My Projects\nDownload Resume\nNilesh Pawar\n\nA passionate Computer Engineering student with a focus on web development and problem-solving. Always eager to learn and grow in the tech industry.\n\nQuick Links\nHome\nAbout\nSkills\nProjects\nAchievements\nContact\nContact\npawarnil898@gmail.com\n+91 8767736538\n\n© 2026 Nilesh Pawar. All rights reserved.",
+    "horizontalOverflow": false,
+    "links": [
+      {
+        "text": "Nilesh Pawar",
+        "href": "/"
+      },
+      {
+        "text": "Home",
+        "href": "/"
+      },
+      {
+        "text": "About",
+        "href": "/about"
+      },
+      {
+        "text": "Skills",
+        "href": "/skills"
+      },
+      {
+        "text": "Projects",
+        "href": "/projects"
+      },
+      {
+        "text": "Achievements",
+        "href": "/achievements"
+      },
+      {
+        "text": "Contact",
+        "href": "/contact"
+      },
+      {
+        "text": "View My Projects",
+        "href": "/projects"
+      },
+      {
+        "text": "Download Resume",
+        "href": "/PawarNilesh_resume.pdf"
+      },
+      {
+        "text": "",
+        "href": "https://github.com/pawarnilesh21/"
+      },
+      {
+        "text": "",
+        "href": "https://www.linkedin.com/in/nilesh-pawar/"
+      },
+      {
+        "text": "",
+        "href": "https://www.instagram.com/in/nilesh-pawar"
+      },
+      {
+        "text": "Nilesh Pawar",
+        "href": "/"
+      },
+      {
+        "text": "",
+        "href": "https://github.com/pawarnilesh21/"
+      },
+      {
+        "text": "",
+        "href": "https://www.linkedin.com/in/nilesh-pawar/"
+      },
+      {
+        "text": "",
+        "href": "https://www.instagram.com/in/nilesh-pawar"
+      },
+      {
+        "text": "Home",
+        "href": "/"
+      },
+      {
+        "text": "About",
+        "href": "/about"
+      },
+      {
+        "text": "Skills",
+        "href": "/skills"
+      },
+      {
+        "text": "Projects",
+        "href": "/projects"
+      },
+      {
+        "text": "Achievements",
+        "href": "/achievements"
+      },
+      {
+        "text": "Contact",
+        "href": "/contact"
+      },
+      {
+        "text": "pawarnil898@gmail.com",
+        "href": "mailto:pawarnil898@gmail.com"
+      },
+      {
+        "text": "+91 8767736538",
+        "href": "tel:+918767736538"
+      }
+    ],
+    "navigation": [
+      {
+        "responseStart": 203.5,
+        "domContentLoaded": 341.89999997615814,
+        "load": 624.8000000119209
+      }
+    ],
+    "mainCount": 2,
+    "errors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "responses": []
+  },
+  {
+    "name": "investify",
+    "url": "https://investiify.netlify.app/",
+    "status": 200,
+    "loadMs": 3021,
+    "title": "Investify",
+    "text": "💎\nInvestify\nLog In\nGet Started\n🚀 Smart Investment Planning\nYour Journey to Financial Freedom\n\nTransform your salary into strategic investments. Let AI guide your path to wealth with personalized plans tailored to your goals, age, and risk appetite.\n\n\"An investment in knowledge pays the best interest\"\n\n— Benjamin Franklin\n\nStart investing wisely today with personalized strategies designed just for you\nStart Your Journey\n→\nWatch Demo\n₹50Cr+\nAssets Managed\n10K+\nActive Users\n4.9/5\nUser Rating\n15%\nAvg. Returns\nWhy Choose Investify?\n\nEverything you need to build wealth, all in one intelligent platform\n\n📊\nSmart Allocation\n\nAI-powered investment distribution across stocks, mutual funds, SIP, and gold\n\n🎯\nGoal Planning\n\nPlan for your dream home, car, or retirement with precision\n\n📈\nReal-time Data\n\nLive market prices and NAV updates for informed decisions\n\n🛡️\nRisk Assessment\n\nPersonalized recommendations based on your risk profile\n\nSimple. Smart. Secure.\n1️⃣\nEnter Your Details\n\nShare your salary, age, and financial goals\n\n2️⃣\nGet AI Recommendations\n\nReceive personalized investment strategies\n\n3️⃣\nStart Investing\n\nExecute your plan and track growth\n\nReady to Build Your Wealth?\n\nJoin thousands of smart investors who are already on their path to financial freedom\n\nCreate Free Account\n💎\nInvestify\n\nEmpowering your financial future with intelligent investment solutions.\n\nProduct\nFeatures\nPricing\nAPI\nCompany\nAbout Us\nCareers\nBlog\nLegal\nPrivacy Policy\nTerms of Service\nDisclaimer\n\n© 2025 Investify. All rights reserved.\n\nTwitter\nLinkedIn\nInstagram",
+    "horizontalOverflow": false,
+    "links": [
+      {
+        "text": "Features",
+        "href": "#features"
+      },
+      {
+        "text": "How It Works",
+        "href": "#how-it-works"
+      },
+      {
+        "text": "About",
+        "href": "#about"
+      },
+      {
+        "text": "Features",
+        "href": "#"
+      },
+      {
+        "text": "Pricing",
+        "href": "#"
+      },
+      {
+        "text": "API",
+        "href": "#"
+      },
+      {
+        "text": "About Us",
+        "href": "#"
+      },
+      {
+        "text": "Careers",
+        "href": "#"
+      },
+      {
+        "text": "Blog",
+        "href": "#"
+      },
+      {
+        "text": "Privacy Policy",
+        "href": "#"
+      },
+      {
+        "text": "Terms of Service",
+        "href": "#"
+      },
+      {
+        "text": "Disclaimer",
+        "href": "#"
+      },
+      {
+        "text": "Twitter",
+        "href": "#"
+      },
+      {
+        "text": "LinkedIn",
+        "href": "#"
+      },
+      {
+        "text": "Instagram",
+        "href": "#"
+      }
+    ],
+    "navigation": [
+      {
+        "responseStart": 1203.199999988079,
+        "domContentLoaded": 3001,
+        "load": 3002.300000011921
+      }
+    ],
+    "mainCount": 0,
+    "errors": [],
+    "responses": []
+  },
+  {
+    "name": "blog",
+    "url": "https://ai-enable-blog-generator.vercel.app/",
+    "status": 200,
+    "loadMs": 4605,
+    "title": "Ai-Blog-Generator",
+    "text": "Login\n\nNew : AI feature integrated\n\nYour own blogging\nplatform.\n\nThis is your space to think out loud, to share what matters, and to write without filters. Whether it's one word or a thousand, your story start right here.\n\nSearch\nAll\nTechnology\nStartup\nLifestyle\nFinance\nNever Miss a Blog!\n\nSubscribe to get the latest blog, new tech, and exclusive news.\n\nSubscribe\n\nLorem ipsum dolor sit amet consectetur, adipisicing elit. Rerun unde quaerat eveniet conque accusamus atque qui error quo enim fugiat?\n\nQuick Links\nHome\nBest Sellers\nOffers & Deals\nContact Us\nFAQs\nNeed Help?\nDelivery Information\nReturn & Refund Policy\nPayment Methods\nTrack your Order\nContact Us\nFollow Us\nInstagram\nTwitter\nFacebook\nYouTube\n\nCopyright 2025 @ QuickBlock -All Right Reserved.",
+    "horizontalOverflow": true,
+    "links": [
+      {
+        "text": "Home",
+        "href": "#"
+      },
+      {
+        "text": "Best Sellers",
+        "href": "#"
+      },
+      {
+        "text": "Offers & Deals",
+        "href": "#"
+      },
+      {
+        "text": "Contact Us",
+        "href": "#"
+      },
+      {
+        "text": "FAQs",
+        "href": "#"
+      },
+      {
+        "text": "Delivery Information",
+        "href": "#"
+      },
+      {
+        "text": "Return & Refund Policy",
+        "href": "#"
+      },
+      {
+        "text": "Payment Methods",
+        "href": "#"
+      },
+      {
+        "text": "Track your Order",
+        "href": "#"
+      },
+      {
+        "text": "Contact Us",
+        "href": "#"
+      },
+      {
+        "text": "Instagram",
+        "href": "#"
+      },
+      {
+        "text": "Twitter",
+        "href": "#"
+      },
+      {
+        "text": "Facebook",
+        "href": "#"
+      },
+      {
+        "text": "YouTube",
+        "href": "#"
+      }
+    ],
+    "navigation": [
+      {
+        "responseStart": 235.80000001192093,
+        "domContentLoaded": 4589.100000023842,
+        "load": 4590.600000023842
+      }
+    ],
+    "mainCount": 0,
+    "errors": [],
+    "responses": []
+  },
+  {
+    "name": "hms",
+    "url": "https://hmsportal.netlify.app/",
+    "status": 200,
+    "loadMs": 1732,
+    "title": "Vite + React + TS",
+    "text": "HMS Portal Login\nRole\nPatient\nReceptionist\nUsername\nPassword\nLogin\nNew patient? Register here",
+    "horizontalOverflow": false,
+    "links": [],
+    "navigation": [
+      {
+        "responseStart": 1076.0999999642372,
+        "domContentLoaded": 1715.2999999523163,
+        "load": 1716.5999999642372
+      }
+    ],
+    "mainCount": 0,
+    "errors": [
+      "Failed to load resource: the server responded with a status of 404 ()"
+    ],
+    "responses": []
+  },
+  {
+    "name": "ecobin",
+    "url": "https://ecobinn.netlify.app/",
+    "status": 200,
+    "loadMs": 1863,
+    "title": "ECO-BIN - Smart Waste Collection for a Sustainable Future",
+    "text": "ECO-BIN\nHome\nVision\nContact\nECO-BIN\n\n\"Smart Waste Collection for a Sustainable Future\"\n\nECO-BIN is a waste collection service that bridges the gap between communities and recycling companies. We make waste disposal easy and ensure it reaches trusted recyclers, where it can be transformed into reusable products. Our aim is to reduce pollution, promote recycling, and build a greener tomorrow.\n\nOur Mission\n\nTo simplify waste management by creating a reliable collection system that benefits people, the environment, and recycling industries.\n\nOur Vision\n\nTo see a future where waste is not a problem but a valuable resource, contributing to cleaner surroundings and a healthier planet.\n\nLearn More\nGet Started\nOur Vision\n\nA sustainable world where every piece of waste is recycled and reused, creating cleaner surroundings and eco-friendly growth.\n\nOur Objectives\n\nTo create an easy-to-use mobile/web platform for waste collection.\n\nTo build a strong and reliable network of waste collectors.\n\nTo ensure all waste is delivered to proper recycling companies.\n\nTo promote awareness about recycling and sustainability.\n\nTo develop a low-cost, sustainable system accessible to everyone.\n\nOur Values\nSustainability\n\nProtecting the environment for future generations.\n\nCommunity\n\nEncouraging people to work together for a cleaner society.\n\nInnovation\n\nUsing smart solutions for waste management.\n\nReliability\n\nEnsuring efficient and trustworthy waste collection services.\n\nGet in Touch with Us\n\nReady to make a difference? Contact us today!\n\nPhone Numbers\n\n+91 91127 76650\n\n+91 93075 55923\n\n+91 92093 35026\n\nEmail\n\necobin.service@gmail.com\n\nLocation\n\nPune, Maharashtra, India\n\nSend Message\nECO-BIN\n\n© 2025 ECO-BIN. All rights reserved. Building a sustainable future together.",
+    "horizontalOverflow": false,
+    "links": [
+      {
+        "text": "Home",
+        "href": "#home"
+      },
+      {
+        "text": "Vision",
+        "href": "#vision"
+      },
+      {
+        "text": "Contact",
+        "href": "#contact"
+      },
+      {
+        "text": "+91 91127 76650",
+        "href": "tel:+919112776650"
+      },
+      {
+        "text": "+91 93075 55923",
+        "href": "tel:+919307555923"
+      },
+      {
+        "text": "+91 92093 35026",
+        "href": "tel:+919209335026"
+      },
+      {
+        "text": "ecobin.service@gmail.com",
+        "href": "mailto:ecobin.service@gmail.com"
+      }
+    ],
+    "navigation": [
+      {
+        "responseStart": 1111.2000000476837,
+        "domContentLoaded": 1685.300000011921,
+        "load": 1848.6000000238419
+      }
+    ],
+    "mainCount": 0,
+    "errors": [],
+    "responses": []
+  },
+  {
+    "name": "dining",
+    "url": "https://dining-master.netlify.app/",
+    "status": 200,
+    "loadMs": 3545,
+    "title": "Restaurant",
+    "text": "Toggle navigation\nRestaurant\nRestaurant\n\" Best In The City \"\nAbout Us\n\nRestaurant is a place for simplicity. Good food, good beer, and good service. Simple is the name of the game, and we’re good at finding it in all the right places, even in your dining experience. We’re a small group from Denver, Colorado who make simple food possible. Come join us and see what simplicity tastes like.\n\n \n \nAffordable Pricing\nAll Breakfast Special Desert Dinner\nGreat Place To Enjoy\n\n\nOUR BEER\n\nHere at Restaurant we’re all about the love of beer. New and bold flavors enter our doors every week, and we can’t help but show them off. While we enjoy the classics, we’re always passionate about discovering something new, so stop by and experience our craft at its best.\n\nOur Breakfast Menu\nOUR BREAD\n\nWe love the smell of fresh baked bread. Each loaf is handmade at the crack of dawn, using only the simplest of ingredients to bring out smells and flavors that beckon the whole block. Stop by anytime and experience simplicity at its finest.\n\n \nOur Featured Dishes Menu\nHave A Look To Our Dishes!\n\nEach food is handmade at the crack of dawn, using only the simplest of ingredients to bring out smells and flavors that beckon the whole block. Stop by anytime and experience simplicity at its finest.\n\n  \nReserve A Table!\n   \n   \nReserve\nHours\n\nMonday to Friday: 7:30 AM - 11:30 AM\n\nSaturday & Sunday: 8:00 AM - 9:00 AM\n\nMonday to Friday: 12:00 PM - 5:00 PM\n\nMonday to Saturday: 6:00 PM - 1:00 AM\n\nSunday to Monday: 5:30 PM - 12:00 AM\n\nFOLLOW\n   \nOR DIAL\n+91 8767736538\n  \nSend Message\n\n© Restaurant 2023, Made By Pawar Neel\n\nBack to TOP\n\nBuilt With Care By Us",
+    "horizontalOverflow": false,
+    "links": [
+      {
+        "text": "Restaurant",
+        "href": "#"
+      },
+      {
+        "text": "WELCOME",
+        "href": "#top"
+      },
+      {
+        "text": "ABOUT",
+        "href": "#story"
+      },
+      {
+        "text": "PRICING",
+        "href": "#pricing"
+      },
+      {
+        "text": "BEER",
+        "href": "#beer"
+      },
+      {
+        "text": "BREAD",
+        "href": "#bread"
+      },
+      {
+        "text": "FEATURED",
+        "href": "#featured"
+      },
+      {
+        "text": "RESERVATION",
+        "href": "#reservation"
+      },
+      {
+        "text": "CONTACT",
+        "href": "#contact"
+      },
+      {
+        "text": "",
+        "href": "#"
+      },
+      {
+        "text": "",
+        "href": "https://github.com/pawarneel0021/pawarneel0021"
+      },
+      {
+        "text": "",
+        "href": "#"
+      },
+      {
+        "text": "",
+        "href": "pawarnil898@gmail.com"
+      },
+      {
+        "text": "+91 8767736538",
+        "href": "tel:883-335-6524"
+      },
+      {
+        "text": "TOP",
+        "href": "#top"
+      },
+      {
+        "text": "Us",
+        "href": "#"
+      }
+    ],
+    "navigation": [
+      {
+        "responseStart": 1208,
+        "domContentLoaded": 2302.199999988079,
+        "load": 3531.100000023842
+      }
+    ],
+    "mainCount": 0,
+    "errors": [
+      "Mixed Content: The page at 'https://dining-master.netlify.app/' was loaded over HTTPS, but requested an insecure stylesheet 'http://fonts.googleapis.com/css?family=Pacifico'. This request has been blocked; the content must be served over HTTPS.",
+      "Mixed Content: The page at 'https://dining-master.netlify.app/' was loaded over HTTPS, but requested an insecure stylesheet 'http://fonts.googleapis.com/css?family=Playball'. This request has been blocked; the content must be served over HTTPS.",
+      "Failed to load resource: the server responded with a status of 404 ()",
+      "Failed to load resource: the server responded with a status of 404 ()",
+      "Failed to load resource: the server responded with a status of 404 ()",
+      "Failed to load resource: the server responded with a status of 404 ()",
+      "Failed to load resource: the server responded with a status of 404 ()",
+      "Failed to load resource: the server responded with a status of 404 ()",
+      "Failed to load resource: the server responded with a status of 404 ()",
+      "Failed to load resource: the server responded with a status of 404 ()"
+    ],
+    "responses": []
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "name": "AI_Study_Notes_Generator",
+  "url": "https://github.com/pawarnilesh21/AI_Study_Notes_Generator",
+  "branch": "main",
+  "sha": "d4f5e42a021515441ce1f2fda562153a890a833e",
+  "readme": "# AI Study Notes Generator\n\n## Project Structure\n\n```\nAI_Study_Notes_Generator/\n├── app.py                      ← Main Streamlit app (run this)\n├── requirements.txt            ← All dependencies\n└── utils/\n    ├── __init__.py\n    ├── llm.py                  ← Hugging Face API helper (add your token here)\n    ├── notes_generator.py      ← Generates structured notes\n    ├── mcq_generator.py        ← Generates MCQs\n    ├── cheatsheet_generator.py ← Generates cheat sheet\n    ├── flashcard_generator.py  ← Generates flashcards\n    ├── pdf_exporter.py         ← Exports everything to PDF\n    └── docx_exporter.py        ← Exports everything to DOCX\n```\n\n---\n\n## Setup & Run Instructions\n\n### Step 1: Clone the repository\n```bash\ngit clone https://github.com/YOUR_USERNAME/AI_Study_Notes_Generator\ncd AI_Study_Notes_Generator\n```\n\n### Step 2: Install dependencies\n```bash\npip install -r requirements.txt\n```\n\n### Step 3: Add your Hugging Face API token\n- Open `utils/llm.py`\n- Replace `hf_YOUR_TOKEN_HERE` with your actual token\n- Get a free token at: https://huggingface.co/settings/tokens\n\n### Step 4: Run the app\n```bash\nstreamlit run app.py\n```\n\n### Step 5: Open in browser\n```\nhttp://localhost:8501\n```\n\n---\n\n## How to Use\n\n1. Enter your subject name in the sidebar (e.g. \"Operating Systems\")\n2. Select difficulty level: Beginner / Intermediate / Advanced\n3. Paste your topic or syllabus text in the main text box\n4. Click **Generate Study Material**\n5. View your notes, MCQs, cheat sheet, and flashcards in the tabs\n6. Download as **PDF** or **DOCX**\n\n---\n\n## Tech Stack\n\n| Component   | Tool                        |\n|-------------|-----------------------------|\n| Language    | Python                      |\n| UI          | Streamlit                   |\n| AI / LLM    | Hugging Face Inference API  |\n| PDF Export  | xhtml2pdf                   |\n| DOCX Export | python-docx                 |\n| Templating  | f-strings / inline HTML     |\n",
+  "paths": [
+    ".gitignore",
+    "README.md",
+    "app.py",
+    "pdf_exporter.py",
+    "requirements.txt",
+    "utils/__pycache__/cheatsheet_generator.cpython-311.pyc",
+    "utils/__pycache__/docx_exporter.cpython-311.pyc",
+    "utils/__pycache__/flashcard_generator.cpython-311.pyc",
+    "utils/__pycache__/llm.cpython-311.pyc",
+    "utils/__pycache__/mcq_generator.cpython-311.pyc",
+    "utils/__pycache__/notes_generator.cpython-311.pyc",
+    "utils/__pycache__/pdf_exporter.cpython-311.pyc",
+    "utils/cheatsheet_generator.py",
+    "utils/docx_exporter.py",
+    "utils/flashcard_generator.py",
+    "utils/llm.py",
+    "utils/mcq_generator.py",
+    "utils/notes_generator.py"
+  ]
+}

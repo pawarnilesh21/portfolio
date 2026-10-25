@@ -1,0 +1,2140 @@
+{
+  "updatedAt": "2026-10-25",
+  "sources": [
+    {
+      "id": "ai-resume",
+      "kind": "resume",
+      "location": "C:/Users/nil55/Documents/Resume/RoleBased/NileshPawar_AiEngineerResume.pdf",
+      "note": "User-selected primary AI/GenAI resume."
+    },
+    {
+      "id": "python-resume",
+      "kind": "resume",
+      "location": "C:/Users/nil55/Documents/Resume/RoleBased/NileshPawar_PythonAI_Engineer.pdf",
+      "note": "Additional internship and achievement evidence; older project versions."
+    },
+    {
+      "id": "sde-resume",
+      "kind": "resume",
+      "location": "C:/Users/nil55/Documents/Resume/RoleBased/SDE_NileshPawar.pdf",
+      "note": "TechSonix end date and LinkedIn link need correction."
+    },
+    {
+      "id": "frontend-resume",
+      "kind": "resume",
+      "location": "C:/Users/nil55/Documents/Resume/RoleBased/NileshPawar_FrontendDeveloperResume.pdf",
+      "note": "Additional frontend claims; SyncBoard version needs confirmation."
+    },
+    {
+      "id": "user-confirmed",
+      "kind": "user",
+      "location": "Current conversation, 2026-10-25",
+      "note": "Jan–Mar 2025 TechSonix; remote preference; AI resume for AI and GenAI."
+    },
+    {
+      "id": "inventory",
+      "kind": "user",
+      "location": "Supplied project inventory, 2026-10-25",
+      "note": "P1–P5 priority, A/B tiers, earlier work order, role lenses."
+    },
+    {
+      "id": "browser",
+      "kind": "browser",
+      "location": "docs/evidence/browser-audit.json",
+      "note": "Six pages inspected in Edge at 360px; Live means landing page loaded, not backend verified."
+    },
+    {
+      "id": "investify-public",
+      "kind": "repository",
+      "location": "https://github.com/pawarnilesh21/Investify-Backend",
+      "note": "Public backend 26d2486; current public recommendation controller uses mock data."
+    },
+    {
+      "id": "investify-frontend",
+      "kind": "repository",
+      "location": "https://github.com/pawarnilesh21/Investify-FrontEnd",
+      "note": "Public frontend ee5024b; sparse README."
+    },
+    {
+      "id": "investify-local",
+      "kind": "local-code",
+      "location": "C:/Users/nil55/WEBDEV/Investify/README.md",
+      "note": "Newer local version: market providers, transactions, revocable bearer JWT sessions."
+    },
+    {
+      "id": "investify-tests",
+      "kind": "local-code",
+      "location": "C:/Users/nil55/WEBDEV/Investify/VERIFICATION.md",
+      "note": "Historical runs; 33 backend, 4 calculation, 9 browser tests reported in September 2026."
+    },
+    {
+      "id": "blog-repo",
+      "kind": "repository",
+      "location": "https://github.com/pawarnilesh21/AI-Enable-Blog-Generator",
+      "note": "ce47082; source includes admin generation/publishing and comments. Not interchangeable with local blogStack."
+    },
+    {
+      "id": "docmind-repo",
+      "kind": "repository",
+      "location": "https://github.com/pawarnilesh21/DocMind",
+      "note": "9634a68; current pgvector RAG implementation and README."
+    },
+    {
+      "id": "docmind-tests",
+      "kind": "repository",
+      "location": "https://github.com/pawarnilesh21/DocMind/blob/main/raw/PRODUCTION_READINESS.md",
+      "note": "38/78% historical PostgreSQL run; later 52 passed/3 skipped/77% SQLite run."
+    },
+    {
+      "id": "resolvedesk-local",
+      "kind": "local-code",
+      "location": "C:/Users/nil55/AiEngineer/ResolveDesk/README.md",
+      "note": "Local demo with simulated refunds only; no public repository discovered."
+    },
+    {
+      "id": "resolvedesk-phases",
+      "kind": "local-code",
+      "location": "C:/Users/nil55/AiEngineer/ResolveDesk/PHASES.md",
+      "note": "Nine phases complete. Phase 10 live LangSmith evaluation/handoff evidence unavailable."
+    },
+    {
+      "id": "resolvedesk-graph",
+      "kind": "local-code",
+      "location": "C:/Users/nil55/AiEngineer/ResolveDesk/backend/app/agent/graph.py",
+      "note": "LangGraph tools, approval interrupt and authenticated action execution."
+    },
+    {
+      "id": "hms-repo",
+      "kind": "repository",
+      "location": "https://github.com/pawarnilesh21/hms-portal",
+      "note": "7e4ca07; React/TypeScript/Zustand with mock data and in-memory operations; no backend files."
+    },
+    {
+      "id": "study-repo",
+      "kind": "repository",
+      "location": "https://github.com/pawarnilesh21/AI_Study_Notes_Generator",
+      "note": "d4f5e42; Streamlit UI and Groq API, despite stale README mentioning Hugging Face."
+    },
+    {
+      "id": "dining-repo",
+      "kind": "repository",
+      "location": "https://github.com/pawarnilesh21/Restaurant_Management",
+      "note": "7a8142e; HTML/CSS/JS static restaurant site; no SQLite source found."
+    },
+    {
+      "id": "kanban-repo",
+      "kind": "repository",
+      "location": "https://github.com/pawarnilesh21/websocket-kanban-vitest-playwright-2026",
+      "note": "21679b6; candidate guide and JS/Socket.IO implementation. Identity as SyncBoard unconfirmed."
+    }
+  ],
+  "profile": {
+    "name": "Nilesh Pawar",
+    "location": "Pune, Maharashtra",
+    "headline": "I build backend systems and grounded AI applications.",
+    "graduationYear": 2027,
+    "workPreference": "Remote",
+    "roles": [
+      "sde",
+      "ai",
+      "genai"
+    ],
+    "sources": [
+      "ai-resume",
+      "user-confirmed"
+    ]
+  },
+  "links": [
+    {
+      "label": "Email",
+      "url": "mailto:pawarnil898@gmail.com",
+      "sources": [
+        "ai-resume"
+      ]
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/pawarnilesh21",
+      "sources": [
+        "ai-resume"
+      ]
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://linkedin.com/in/pawarnilesh21",
+      "sources": [
+        "ai-resume"
+      ]
+    },
+    {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/pawarnilesh_21",
+      "sources": [
+        "ai-resume"
+      ]
+    }
+  ],
+  "resumes": [
+    {
+      "id": "ai",
+      "title": "AI / GenAI Engineer",
+      "sourcePath": "C:/Users/nil55/Documents/Resume/RoleBased/NileshPawar_AiEngineerResume.pdf",
+      "publicPath": "/resumes/NileshPawar_AiEngineerResume.pdf",
+      "roles": [
+        "ai",
+        "genai"
+      ],
+      "caveat": "Preferred by user. Project-version and historical-metric differences tracked separately."
+    },
+    {
+      "id": "sde",
+      "title": "Software Development Engineer",
+      "sourcePath": "C:/Users/nil55/Documents/Resume/RoleBased/SDE_NileshPawar.pdf",
+      "publicPath": "/resumes/SDE_NileshPawar.pdf",
+      "roles": [
+        "sde"
+      ],
+      "caveat": "User confirmed Mar 2025 TechSonix end date; PDF still says Feb. LinkedIn is a placeholder."
+    },
+    {
+      "id": "python-ai",
+      "title": "Python / AI Engineer",
+      "sourcePath": "C:/Users/nil55/Documents/Resume/RoleBased/NileshPawar_PythonAI_Engineer.pdf",
+      "publicPath": "/resumes/NileshPawar_PythonAI_Engineer.pdf",
+      "roles": [],
+      "caveat": "Supplemental source; not the GenAI download."
+    },
+    {
+      "id": "frontend",
+      "title": "Frontend Developer",
+      "sourcePath": "C:/Users/nil55/Documents/Resume/RoleBased/NileshPawar_FrontendDeveloperResume.pdf",
+      "publicPath": "/resumes/NileshPawar_FrontendDeveloperResume.pdf",
+      "roles": [],
+      "caveat": "Supplemental source; SyncBoard identity unresolved."
+    }
+  ],
+  "experience": [
+    {
+      "id": "techsonix",
+      "company": "TechSonix",
+      "title": "Backend Developer Intern",
+      "start": "Jan 2025",
+      "end": "Mar 2025",
+      "mode": "Remote",
+      "scope": "Node.js/Express API development under senior developer guidance.",
+      "stack": [
+        "Node.js",
+        "Express.js",
+        "JWT",
+        "bcrypt",
+        "RBAC",
+        "Git"
+      ],
+      "sources": [
+        "ai-resume",
+        "python-resume",
+        "frontend-resume",
+        "user-confirmed"
+      ],
+      "bullets": [
+        {
+          "text": "I developed and maintained REST API endpoints with modular routing and middleware under senior developer guidance.",
+          "sources": [
+            "ai-resume"
+          ],
+          "state": "resume",
+          "publish": true,
+          "note": "Supported by the cited source; not independently rerun."
+        },
+        {
+          "text": "I implemented JWT authentication, bcrypt password hashing and role-based access control.",
+          "sources": [
+            "ai-resume"
+          ],
+          "state": "resume",
+          "publish": true,
+          "note": "Supported by the cited source; not independently rerun."
+        },
+        {
+          "text": "I debugged backend issues and collaborated on feature development and code reviews using Git.",
+          "sources": [
+            "ai-resume"
+          ],
+          "state": "resume",
+          "publish": true,
+          "note": "Supported by the cited source; not independently rerun."
+        }
+      ],
+      "todos": [
+        "internship-metrics"
+      ]
+    },
+    {
+      "id": "techking",
+      "company": "TechKing Solutions",
+      "title": "Web Developer Intern",
+      "start": "Jun 2023",
+      "end": "Jul 2023",
+      "mode": "Not confirmed; resume location: Shirdi, Maharashtra",
+      "scope": "Hotel Management System booking interfaces and backend data integration.",
+      "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PHP",
+        "MySQL"
+      ],
+      "sources": [
+        "python-resume",
+        "sde-resume"
+      ],
+      "bullets": [
+        {
+          "text": "I developed a Hotel Management System with responsive booking interfaces and backend data integration using HTML, CSS, JavaScript, PHP and MySQL.",
+          "sources": [
+            "python-resume",
+            "sde-resume"
+          ],
+          "state": "resume",
+          "publish": true,
+          "note": "Supported by the cited source; not independently rerun."
+        }
+      ],
+      "todos": [
+        "internship-metrics"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "investify",
+      "title": "Investify",
+      "tier": "A",
+      "priority": 1,
+      "roles": [
+        "sde"
+      ],
+      "status": "Live",
+      "summary": "Financial planning and stock research, with separate public and newer local implementations.",
+      "stack": [
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB"
+      ],
+      "repositories": [
+        "https://github.com/pawarnilesh21/Investify-FrontEnd",
+        "https://github.com/pawarnilesh21/Investify-Backend"
+      ],
+      "liveUrl": "https://investiify.netlify.app/",
+      "liveCheckedAt": "2026-10-25",
+      "liveScope": "Public landing page returned HTTP 200; protected or backend flows not certified.",
+      "sources": [
+        "ai-resume",
+        "investify-public",
+        "investify-local",
+        "browser"
+      ],
+      "claims": [
+        {
+          "text": "I built Investify solo to support financial goals and risk-based allocation.",
+          "sources": [
+            "ai-resume",
+            "python-resume"
+          ],
+          "state": "resume",
+          "publish": true,
+          "note": "Supported by the cited source; not independently rerun."
+        },
+        {
+          "text": "The newer local version includes plan revisions, goals/watchlists, provider timeouts and cached market lookups.",
+          "sources": [
+            "investify-local"
+          ],
+          "state": "verified",
+          "publish": false,
+          "note": "Verified local scope; public repository/deployment is older."
+        },
+        {
+          "text": "Revocable cookie sessions, JWT/RBAC and bearer JWT descriptions refer to conflicting versions.",
+          "sources": [
+            "ai-resume",
+            "python-resume",
+            "investify-local"
+          ],
+          "state": "conflict",
+          "publish": false,
+          "note": "User confirmation required."
+        }
+      ],
+      "metrics": [],
+      "todos": [
+        "investify-version",
+        "investify-auth",
+        "investify-metrics",
+        "investify-demo"
+      ]
+    },
+    {
+      "id": "ai-blog-generator",
+      "title": "AI Blog Generator",
+      "tier": "A",
+      "priority": 2,
+      "roles": [
+        "sde",
+        "genai"
+      ],
+      "status": "Live",
+      "summary": "An admin publishing workflow with Gemini-assisted drafts, image uploads and public comments.",
+      "stack": [
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Gemini API",
+        "ImageKit"
+      ],
+      "repositories": [
+        "https://github.com/pawarnilesh21/AI-Enable-Blog-Generator"
+      ],
+      "liveUrl": "https://ai-enable-blog-generator.vercel.app/",
+      "liveCheckedAt": "2026-10-25",
+      "liveScope": "Public landing page returned HTTP 200; protected or backend flows not certified.",
+      "sources": [
+        "blog-repo",
+        "sde-resume",
+        "browser"
+      ],
+      "claims": [
+        {
+          "text": "I integrated Gemini-generated drafts into an admin blog publishing workflow.",
+          "sources": [
+            "blog-repo",
+            "sde-resume"
+          ],
+          "state": "verified",
+          "publish": true,
+          "note": "Supported by the cited source; not independently rerun."
+        },
+        {
+          "text": "The code supports image uploads, publish/unpublish controls, search and comments.",
+          "sources": [
+            "blog-repo"
+          ],
+          "state": "verified",
+          "publish": true,
+          "note": "Supported by the cited source; not independently rerun."
+        },
+        {
+          "text": "Nested comments, likes and bookmarking are not established by this repository.",
+          "sources": [
+            "sde-resume",
+            "blog-repo"
+          ],
+          "state": "conflict",
+          "publish": false,
+          "note": "Separate BlogStack identity needs confirmation."
+        }
+      ],
+      "metrics": [],
+      "todos": [
+        "blog-identity",
+        "blog-evaluation"
+      ]
+    },
+    {
+      "id": "hms-portal",
+      "title": "HMS Portal",
+      "tier": "A",
+      "priority": 3,
+      "roles": [
+        "sde"
+      ],
+      "status": "Live",
+      "summary": "A patient and receptionist interface prototype for appointments, queues and bed allocation.",
+      "stack": [
+        "React",
+        "TypeScript",
+        "Zustand",
+        "Tailwind CSS",
+        "Vite"
+      ],
+      "repositories": [
+        "https://github.com/pawarnilesh21/hms-portal"
+      ],
+      "liveUrl": "https://hmsportal.netlify.app/",
+      "liveCheckedAt": "2026-10-25",
+      "liveScope": "Public landing page returned HTTP 200; protected or backend flows not certified.",
+      "sources": [
+        "hms-repo",
+        "inventory",
+        "browser"
+      ],
+      "claims": [
+        {
+          "text": "The frontend models patient/receptionist flows, appointment approval and bed assignment.",
+          "sources": [
+            "hms-repo"
+          ],
+          "state": "verified",
+          "publish": true,
+          "note": "Supported by the cited source; not independently rerun."
+        },
+        {
+          "text": "Queue position is derived from approved appointments sorted by date and time in browser memory.",
+          "sources": [
+            "hms-repo"
+          ],
+          "state": "verified",
+          "publish": true,
+          "note": "Supported by the cited source; not independently rerun."
+        },
+        {
+          "text": "The supplied MERN description is not supported by the available frontend repository.",
+          "sources": [
+            "inventory",
+            "hms-repo"
+          ],
+          "state": "conflict",
+          "publish": false,
+          "note": "Do not claim a server-backed hospital system."
+        }
+      ],
+      "metrics": [],
+      "todos": [
+        "hms-scope"
+      ]
+    },
+    {
+      "id": "eco-bin",
+      "title": "ECO-BIN",
+      "tier": "B",
+      "priority": 4,
+      "roles": [
+        "sde"
+      ],
+      "status": "Live",
+      "summary": "A landing page introducing a community waste-collection service.",
+      "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "repositories": [],
+      "liveUrl": "https://ecobinn.netlify.app/",
+      "liveCheckedAt": "2026-10-25",
+      "liveScope": "Public landing page returned HTTP 200; protected or backend flows not certified.",
+      "sources": [
+        "inventory",
+        "browser"
+      ],
+      "claims": [
+        {
+          "text": "The public site introduces the service's mission, vision and contact details.",
+          "sources": [
+            "browser"
+          ],
+          "state": "verified",
+          "publish": true,
+          "note": "Supported by the cited source; not independently rerun."
+        }
+      ],
+      "metrics": [],
+      "todos": [
+        "eco-repo"
+      ]
+    },
+    {
+      "id": "dining-master",
+      "title": "Dining Master",
+      "tier": "B",
+      "priority": 5,
+      "roles": [
+        "sde"
+      ],
+      "status": "Live",
+      "summary": "An earlier restaurant landing page with menu, reservation and contact sections.",
+      "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "repositories": [
+        "https://github.com/pawarnilesh21/Restaurant_Management"
+      ],
+      "liveUrl": "https://dining-master.netlify.app/",
+      "liveCheckedAt": "2026-10-25",
+      "liveScope": "Public landing page returned HTTP 200; protected or backend flows not certified.",
+      "sources": [
+        "dining-repo",
+        "browser",
+        "inventory"
+      ],
+      "claims": [
+        {
+          "text": "The public repository contains the static restaurant interface.",
+          "sources": [
+            "dining-repo"
+          ],
+          "state": "verified",
+          "publish": true,
+          "note": "Supported by the cited source; not independently rerun."
+        }
+      ],
+      "metrics": [],
+      "todos": [
+        "dining-scope"
+      ]
+    },
+    {
+      "id": "docmind",
+      "title": "DocMind",
+      "tier": "A",
+      "priority": 6,
+      "roles": [
+        "ai",
+        "genai",
+        "sde"
+      ],
+      "status": "Code only",
+      "summary": "Private document Q&A with owner-scoped retrieval, source excerpts and grounded-answer checks.",
+      "stack": [
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "pgvector",
+        "Gemini API",
+        "Groq API",
+        "React",
+        "Docker"
+      ],
+      "repositories": [
+        "https://github.com/pawarnilesh21/DocMind"
+      ],
+      "liveUrl": null,
+      "liveCheckedAt": null,
+      "liveScope": "Local or repository code only; no public runnable deployment verified.",
+      "sources": [
+        "ai-resume",
+        "docmind-repo",
+        "docmind-tests"
+      ],
+      "claims": [
+        {
+          "text": "I built document Q&A and summarization for PDF, DOCX and text using owner-scoped pgvector retrieval.",
+          "sources": [
+            "ai-resume",
+            "docmind-repo"
+          ],
+          "state": "verified",
+          "publish": true,
+          "note": "Supported by the cited source; not independently rerun."
+        },
+        {
+          "text": "A durable ingestion worker uses bounded retries and transactional indexing; answers validate quotations and cited sources before an entailment check.",
+          "sources": [
+            "docmind-repo"
+          ],
+          "state": "verified",
+          "publish": true,
+          "note": "Supported by the cited source; not independently rerun."
+        },
+        {
+          "text": "Older ChromaDB and newer pgvector descriptions must not be combined.",
+          "sources": [
+            "python-resume",
+            "docmind-repo"
+          ],
+          "state": "conflict",
+          "publish": false,
+          "note": "Current public code establishes pgvector; confirmation remains recorded."
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Backend verification",
+          "value": "38 tests passed; 78% coverage",
+          "source": "docmind-tests",
+          "measuredAt": "2026-09-14",
+          "scope": "Historical isolated PostgreSQL/pgvector run; not rerun during this portfolio audit.",
+          "publish": true
+        },
+        {
+          "label": "Browser verification",
+          "value": "3 Chromium tests",
+          "source": "docmind-tests",
+          "measuredAt": "2026-09-14",
+          "scope": "Historical frontend tests with mocked API; not full live model evaluation.",
+          "publish": true
+        },
+        {
+          "label": "JWT regression",
+          "value": "52 passed; 3 skipped; 77% coverage",
+          "source": "docmind-tests",
+          "measuredAt": "2026-09-29",
+          "scope": "Later SQLite run; not equivalent to the PostgreSQL run; not rerun here.",
+          "publish": true
+        }
+      ],
+      "todos": [
+        "docmind-version",
+        "docmind-metrics"
+      ]
+    },
+    {
+      "id": "resolvedesk",
+      "title": "ResolveDesk",
+      "tier": "A",
+      "priority": 7,
+      "roles": [
+        "genai",
+        "ai",
+        "sde"
+      ],
+      "status": "Code only",
+      "summary": "An order-support agent with tool calls, human approval and replay-safe simulated refunds.",
+      "stack": [
+        "Python",
+        "FastAPI",
+        "React",
+        "LangChain",
+        "LangGraph",
+        "PostgreSQL"
+      ],
+      "repositories": [],
+      "liveUrl": null,
+      "liveCheckedAt": null,
+      "liveScope": "Local or repository code only; no public runnable deployment verified.",
+      "sources": [
+        "ai-resume",
+        "resolvedesk-local",
+        "resolvedesk-graph",
+        "resolvedesk-phases"
+      ],
+      "claims": [
+        {
+          "text": "I built a tool-calling support workflow with checkpointed approval and replay-safe simulated refund actions.",
+          "sources": [
+            "ai-resume",
+            "resolvedesk-graph",
+            "resolvedesk-local"
+          ],
+          "state": "verified",
+          "publish": true,
+          "note": "Supported by the cited source; not independently rerun."
+        },
+        {
+          "text": "Refunds are demo records, not real payments; the project uses a single backend worker.",
+          "sources": [
+            "resolvedesk-local"
+          ],
+          "state": "verified",
+          "publish": true,
+          "note": "Supported by the cited source; not independently rerun."
+        },
+        {
+          "text": "Completed LangSmith evaluation is claimed in the resume, but final evaluation evidence is unfinished in the phase tracker.",
+          "sources": [
+            "ai-resume",
+            "resolvedesk-phases"
+          ],
+          "state": "conflict",
+          "publish": false,
+          "note": "Keep evaluation completion out of public copy."
+        }
+      ],
+      "metrics": [],
+      "todos": [
+        "resolvedesk-repo",
+        "resolvedesk-eval"
+      ]
+    },
+    {
+      "id": "studyforge",
+      "title": "StudyForge / AI Notes Generator",
+      "tier": "B",
+      "priority": 8,
+      "roles": [
+        "ai",
+        "genai"
+      ],
+      "status": "Code only",
+      "summary": "A study-material generator for notes, MCQs, cheat sheets and flashcards.",
+      "stack": [
+        "Python",
+        "Streamlit",
+        "Groq API",
+        "xhtml2pdf",
+        "python-docx"
+      ],
+      "repositories": [
+        "https://github.com/pawarnilesh21/AI_Study_Notes_Generator"
+      ],
+      "liveUrl": null,
+      "liveCheckedAt": null,
+      "liveScope": "Local or repository code only; no public runnable deployment verified.",
+      "sources": [
+        "python-resume",
+        "sde-resume",
+        "study-repo"
+      ],
+      "claims": [
+        {
+          "text": "The available code uses Streamlit and Groq to generate four study formats.",
+          "sources": [
+            "study-repo"
+          ],
+          "state": "verified",
+          "publish": true,
+          "note": "Supported by the cited source; not independently rerun."
+        },
+        {
+          "text": "React/Node stack and clean PDF export are not proven by the current public project snapshot.",
+          "sources": [
+            "python-resume",
+            "study-repo"
+          ],
+          "state": "conflict",
+          "publish": false,
+          "note": "app.py imports a PDF helper absent as source at the referenced utils path."
+        }
+      ],
+      "metrics": [],
+      "todos": [
+        "study-version"
+      ]
+    },
+    {
+      "id": "syncboard",
+      "title": "SyncBoard",
+      "tier": "candidate",
+      "priority": 9,
+      "roles": [
+        "sde"
+      ],
+      "status": "Code only",
+      "summary": "A collaborative Kanban project described in the frontend resume; matching implementation needs confirmation.",
+      "stack": [
+        "React",
+        "TypeScript",
+        "Zustand",
+        "WebSocket"
+      ],
+      "repositories": [],
+      "liveUrl": null,
+      "liveCheckedAt": null,
+      "liveScope": "Local or repository code only; no public runnable deployment verified.",
+      "sources": [
+        "frontend-resume",
+        "kanban-repo"
+      ],
+      "claims": [
+        {
+          "text": "The frontend resume describes optimistic updates, rollback, offline replay and accessible drag and drop.",
+          "sources": [
+            "frontend-resume"
+          ],
+          "state": "resume",
+          "publish": false,
+          "note": "Matching public repository unconfirmed; candidate only."
+        }
+      ],
+      "metrics": [],
+      "todos": [
+        "syncboard-version"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Node.js",
+      "capability": "Backend & Systems",
+      "roles": [
+        "sde",
+        "genai"
+      ],
+      "level": "internship",
+      "evidence": [
+        "techsonix"
+      ],
+      "sources": [
+        "ai-resume"
+      ],
+      "note": "Linked to supplied experience or implementation evidence."
+    },
+    {
+      "name": "Express.js",
+      "capability": "Backend & Systems",
+      "roles": [
+        "sde",
+        "genai"
+      ],
+      "level": "internship",
+      "evidence": [
+        "techsonix"
+      ],
+      "sources": [
+        "ai-resume"
+      ],
+      "note": "Linked to supplied experience or implementation evidence."
+    },
+    {
+      "name": "REST APIs",
+      "capability": "Backend & Systems",
+      "roles": [
+        "sde",
+        "genai"
+      ],
+      "level": "internship",
+      "evidence": [
+        "techsonix"
+      ],
+      "sources": [
+        "ai-resume"
+      ],
+      "note": "Linked to supplied experience or implementation evidence."
+    },
+    {
+      "name": "JWT",
+      "capability": "Backend & Systems",
+      "roles": [
+        "sde",
+        "genai"
+      ],
+      "level": "internship",
+      "evidence": [
+        "techsonix"
+      ],
+      "sources": [
+        "ai-resume"
+      ],
+      "note": "Linked to supplied experience or implementation evidence."
+    },
+    {
+      "name": "bcrypt",
+      "capability": "Backend & Systems",
+      "roles": [
+        "sde",
+        "genai"
+      ],
+      "level": "internship",
+      "evidence": [
+        "techsonix"
+      ],
+      "sources": [
+        "ai-resume"
+      ],
+      "note": "Linked to supplied experience or implementation evidence."
+    },
+    {
+      "name": "RBAC",
+      "capability": "Backend & Systems",
+      "roles": [
+        "sde",
+        "genai"
+      ],
+      "level": "internship",
+      "evidence": [
+        "techsonix"
+      ],
+      "sources": [
+        "ai-resume"
+      ],
+      "note": "Linked to supplied experience or implementation evidence."
+    },
+    {
+      "name": "PHP",
+      "capability": "Backend & Systems",
+      "roles": [
+        "sde"
+      ],
+      "level": "internship",
+      "evidence": [
+        "techking"
+      ],
+      "sources": [
+        "python-resume"
+      ],
+      "note": "Linked to supplied experience or implementation evidence."
+    },
+    {
+      "name": "MySQL",
+      "capability": "Backend & Systems",
+      "roles": [
+        "sde"
+      ],
+      "level": "internship",
+      "evidence": [
+        "techking"
+      ],
+      "sources": [
+        "python-resume"
+      ],
+      "note": "Linked to supplied experience or implementation evidence."
+    },
+    {
+      "name": "HTML",
+      "capability": "Languages",
+      "roles": [
+        "sde"
+      ],
+      "level": "internship",
+      "evidence": [
+        "techking"
+      ],
+      "sources": [
+        "python-resume"
+      ],
+      "note": "Linked to supplied experience or implementation evidence."
+    },
+    {
+      "name": "CSS",
+      "capability": "Languages",
+      "roles": [
+        "sde"
+      ],
+      "level": "internship",
+      "evidence": [
+        "techking"
+      ],
+      "sources": [
+        "python-resume"
+      ],
+      "note": "Linked to supplied experience or implementation evidence."
+    },
+    {
+      "name": "JavaScript",
+      "capability": "Languages",
+      "roles": [
+        "sde"
+      ],
+      "level": "internship",
+      "evidence": [
+        "techking"
+      ],
+      "sources": [
+        "python-resume"
+      ],
+      "note": "Linked to supplied experience or implementation evidence."
+    },
+    {
+      "name": "Python",
+      "capability": "ML & Data",
+      "roles": [
+        "ai",
+        "genai",
+        "sde"
+      ],
+      "level": "shipped project",
+      "evidence": [
+        "docmind"
+      ],
+      "sources": [
+        "ai-resume",
+        "docmind-repo"
+      ],
+      "note": "Implemented code-only project; shipped does not imply publicly hosted."
+    },
+    {
+      "name": "FastAPI",
+      "capability": "ML & Data",
+      "roles": [
+        "ai",
+        "genai",
+        "sde"
+      ],
+      "level": "shipped project",
+      "evidence": [
+        "docmind"
+      ],
+      "sources": [
+        "ai-resume",
+        "docmind-repo"
+      ],
+      "note": "Implemented code-only project; shipped does not imply publicly hosted."
+    },
+    {
+      "name": "PostgreSQL",
+      "capability": "ML & Data",
+      "roles": [
+        "ai",
+        "genai",
+        "sde"
+      ],
+      "level": "shipped project",
+      "evidence": [
+        "docmind"
+      ],
+      "sources": [
+        "ai-resume",
+        "docmind-repo"
+      ],
+      "note": "Implemented code-only project; shipped does not imply publicly hosted."
+    },
+    {
+      "name": "pgvector",
+      "capability": "ML & Data",
+      "roles": [
+        "ai",
+        "genai",
+        "sde"
+      ],
+      "level": "shipped project",
+      "evidence": [
+        "docmind"
+      ],
+      "sources": [
+        "ai-resume",
+        "docmind-repo"
+      ],
+      "note": "Implemented code-only project; shipped does not imply publicly hosted."
+    },
+    {
+      "name": "Docker",
+      "capability": "ML & Data",
+      "roles": [
+        "ai",
+        "genai",
+        "sde"
+      ],
+      "level": "shipped project",
+      "evidence": [
+        "docmind"
+      ],
+      "sources": [
+        "ai-resume",
+        "docmind-repo"
+      ],
+      "note": "Implemented code-only project; shipped does not imply publicly hosted."
+    },
+    {
+      "name": "RAG",
+      "capability": "GenAI & LLM Apps",
+      "roles": [
+        "ai",
+        "genai"
+      ],
+      "level": "shipped project",
+      "evidence": [
+        "docmind"
+      ],
+      "sources": [
+        "ai-resume",
+        "docmind-repo"
+      ],
+      "note": "Verified implementation; no representative quality benchmark claimed."
+    },
+    {
+      "name": "Embeddings & Vector Search",
+      "capability": "GenAI & LLM Apps",
+      "roles": [
+        "ai",
+        "genai"
+      ],
+      "level": "shipped project",
+      "evidence": [
+        "docmind"
+      ],
+      "sources": [
+        "ai-resume",
+        "docmind-repo"
+      ],
+      "note": "Verified implementation; no representative quality benchmark claimed."
+    },
+    {
+      "name": "Gemini API",
+      "capability": "GenAI & LLM Apps",
+      "roles": [
+        "ai",
+        "genai"
+      ],
+      "level": "shipped project",
+      "evidence": [
+        "docmind"
+      ],
+      "sources": [
+        "ai-resume",
+        "docmind-repo"
+      ],
+      "note": "Verified implementation; no representative quality benchmark claimed."
+    },
+    {
+      "name": "Groq API",
+      "capability": "GenAI & LLM Apps",
+      "roles": [
+        "ai",
+        "genai"
+      ],
+      "level": "shipped project",
+      "evidence": [
+        "docmind"
+      ],
+      "sources": [
+        "ai-resume",
+        "docmind-repo"
+      ],
+      "note": "Verified implementation; no representative quality benchmark claimed."
+    },
+    {
+      "name": "Prompt Engineering",
+      "capability": "GenAI & LLM Apps",
+      "roles": [
+        "ai",
+        "genai"
+      ],
+      "level": "shipped project",
+      "evidence": [
+        "docmind"
+      ],
+      "sources": [
+        "ai-resume",
+        "docmind-repo"
+      ],
+      "note": "Verified implementation; no representative quality benchmark claimed."
+    },
+    {
+      "name": "LangChain",
+      "capability": "GenAI & LLM Apps",
+      "roles": [
+        "genai",
+        "ai"
+      ],
+      "level": "shipped project",
+      "evidence": [
+        "resolvedesk"
+      ],
+      "sources": [
+        "ai-resume",
+        "resolvedesk-graph"
+      ],
+      "note": "Local demo implementation; public repository pending."
+    },
+    {
+      "name": "LangGraph",
+      "capability": "GenAI & LLM Apps",
+      "roles": [
+        "genai",
+        "ai"
+      ],
+      "level": "shipped project",
+      "evidence": [
+        "resolvedesk"
+      ],
+      "sources": [
+        "ai-resume",
+        "resolvedesk-graph"
+      ],
+      "note": "Local demo implementation; public repository pending."
+    },
+    {
+      "name": "Tool Calling",
+      "capability": "GenAI & LLM Apps",
+      "roles": [
+        "genai",
+        "ai"
+      ],
+      "level": "shipped project",
+      "evidence": [
+        "resolvedesk"
+      ],
+      "sources": [
+        "ai-resume",
+        "resolvedesk-graph"
+      ],
+      "note": "Local demo implementation; public repository pending."
+    },
+    {
+      "name": "React",
+      "capability": "Frontend",
+      "roles": [
+        "sde"
+      ],
+      "level": "shipped project",
+      "evidence": [
+        "hms-portal"
+      ],
+      "sources": [
+        "frontend-resume",
+        "hms-repo"
+      ],
+      "note": "Linked to supplied experience or implementation evidence."
+    },
+    {
+      "name": "Tailwind CSS",
+      "capability": "Frontend",
+      "roles": [
+        "sde"
+      ],
+      "level": "shipped project",
+      "evidence": [
+        "hms-portal"
+      ],
+      "sources": [
+        "frontend-resume",
+        "hms-repo"
+      ],
+      "note": "Linked to supplied experience or implementation evidence."
+    },
+    {
+      "name": "TypeScript",
+      "capability": "Frontend",
+      "roles": [
+        "sde"
+      ],
+      "level": "shipped project",
+      "evidence": [
+        "hms-portal"
+      ],
+      "sources": [
+        "frontend-resume",
+        "hms-repo"
+      ],
+      "note": "Linked to supplied experience or implementation evidence."
+    },
+    {
+      "name": "Vite",
+      "capability": "Frontend",
+      "roles": [
+        "sde"
+      ],
+      "level": "shipped project",
+      "evidence": [
+        "hms-portal"
+      ],
+      "sources": [
+        "frontend-resume",
+        "hms-repo"
+      ],
+      "note": "Linked to supplied experience or implementation evidence."
+    },
+    {
+      "name": "MongoDB",
+      "capability": "Backend & Systems",
+      "roles": [
+        "sde"
+      ],
+      "level": "shipped project",
+      "evidence": [
+        "ai-blog-generator"
+      ],
+      "sources": [
+        "blog-repo"
+      ],
+      "note": "Linked to supplied experience or implementation evidence."
+    },
+    {
+      "name": "Mongoose",
+      "capability": "Backend & Systems",
+      "roles": [
+        "sde"
+      ],
+      "level": "shipped project",
+      "evidence": [
+        "ai-blog-generator"
+      ],
+      "sources": [
+        "blog-repo"
+      ],
+      "note": "Linked to supplied experience or implementation evidence."
+    },
+    {
+      "name": "Git",
+      "capability": "Cloud & DevOps",
+      "roles": [
+        "sde",
+        "ai",
+        "genai"
+      ],
+      "level": "internship",
+      "evidence": [
+        "techsonix"
+      ],
+      "sources": [
+        "ai-resume"
+      ],
+      "note": "Linked to supplied experience or implementation evidence."
+    },
+    {
+      "name": "GitHub",
+      "capability": "Cloud & DevOps",
+      "roles": [
+        "sde",
+        "ai",
+        "genai"
+      ],
+      "level": "internship",
+      "evidence": [
+        "techsonix"
+      ],
+      "sources": [
+        "ai-resume"
+      ],
+      "note": "Linked to supplied experience or implementation evidence."
+    },
+    {
+      "name": "CI/CD",
+      "capability": "Cloud & DevOps",
+      "roles": [
+        "sde",
+        "ai",
+        "genai"
+      ],
+      "level": "shipped project",
+      "evidence": [
+        "docmind"
+      ],
+      "sources": [
+        "docmind-repo"
+      ],
+      "note": "Linked to supplied experience or implementation evidence."
+    },
+    {
+      "name": "Vercel",
+      "capability": "Cloud & DevOps",
+      "roles": [
+        "sde",
+        "genai"
+      ],
+      "level": "shipped project",
+      "evidence": [
+        "ai-blog-generator"
+      ],
+      "sources": [
+        "browser",
+        "sde-resume"
+      ],
+      "note": "Linked to supplied experience or implementation evidence."
+    },
+    {
+      "name": "Netlify",
+      "capability": "Cloud & DevOps",
+      "roles": [
+        "sde"
+      ],
+      "level": "shipped project",
+      "evidence": [
+        "hms-portal"
+      ],
+      "sources": [
+        "browser",
+        "sde-resume"
+      ],
+      "note": "Linked to supplied experience or implementation evidence."
+    },
+    {
+      "name": "Unit/API/Browser Testing",
+      "capability": "Engineering Practice",
+      "roles": [
+        "sde",
+        "ai",
+        "genai"
+      ],
+      "level": "shipped project",
+      "evidence": [
+        "docmind"
+      ],
+      "sources": [
+        "docmind-tests",
+        "frontend-resume"
+      ],
+      "note": "Historical verification documented; portfolio audit did not rerun project suites."
+    },
+    {
+      "name": "SQL",
+      "capability": "Languages",
+      "roles": [
+        "sde"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "python-resume",
+        "sde-resume"
+      ],
+      "note": "Listed in resume; no reviewed work artifact establishes a specific use here."
+    },
+    {
+      "name": "Java",
+      "capability": "Languages",
+      "roles": [
+        "sde"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "python-resume",
+        "sde-resume"
+      ],
+      "note": "Listed in resume; no reviewed work artifact establishes a specific use here."
+    },
+    {
+      "name": "C",
+      "capability": "Languages",
+      "roles": [
+        "sde"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "python-resume",
+        "sde-resume"
+      ],
+      "note": "Listed in resume; no reviewed work artifact establishes a specific use here."
+    },
+    {
+      "name": "C++",
+      "capability": "Languages",
+      "roles": [
+        "sde"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "python-resume",
+        "sde-resume"
+      ],
+      "note": "Listed in resume; no reviewed work artifact establishes a specific use here."
+    },
+    {
+      "name": "SQLAlchemy",
+      "capability": "Backend & Systems",
+      "roles": [
+        "sde",
+        "ai"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "ai-resume",
+        "sde-resume"
+      ],
+      "note": "Resume-listed; stronger usage evidence still needed."
+    },
+    {
+      "name": "Redis",
+      "capability": "Backend & Systems",
+      "roles": [
+        "sde",
+        "ai"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "ai-resume",
+        "sde-resume"
+      ],
+      "note": "Resume-listed; stronger usage evidence still needed."
+    },
+    {
+      "name": "Oracle",
+      "capability": "Backend & Systems",
+      "roles": [
+        "sde",
+        "ai"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "ai-resume",
+        "sde-resume"
+      ],
+      "note": "Resume-listed; stronger usage evidence still needed."
+    },
+    {
+      "name": "Prisma ORM",
+      "capability": "Backend & Systems",
+      "roles": [
+        "sde",
+        "ai"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "ai-resume",
+        "sde-resume"
+      ],
+      "note": "Resume-listed; stronger usage evidence still needed."
+    },
+    {
+      "name": "ChromaDB",
+      "capability": "ML & Data",
+      "roles": [
+        "ai",
+        "genai"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "ai-resume",
+        "python-resume"
+      ],
+      "note": "Resume-listed; ChromaDB belongs to an older DocMind version."
+    },
+    {
+      "name": "Pinecone",
+      "capability": "ML & Data",
+      "roles": [
+        "ai",
+        "genai"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "ai-resume",
+        "python-resume"
+      ],
+      "note": "Resume-listed; ChromaDB belongs to an older DocMind version."
+    },
+    {
+      "name": "FAISS",
+      "capability": "ML & Data",
+      "roles": [
+        "ai",
+        "genai"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "ai-resume",
+        "python-resume"
+      ],
+      "note": "Resume-listed; ChromaDB belongs to an older DocMind version."
+    },
+    {
+      "name": "NVIDIA Nemotron",
+      "capability": "GenAI & LLM Apps",
+      "roles": [
+        "ai",
+        "genai"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "ai-resume"
+      ],
+      "note": "Resume-listed; completed project evaluation/integration not verified."
+    },
+    {
+      "name": "LangSmith",
+      "capability": "GenAI & LLM Apps",
+      "roles": [
+        "ai",
+        "genai"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "ai-resume"
+      ],
+      "note": "Resume-listed; completed project evaluation/integration not verified."
+    },
+    {
+      "name": "Ragas",
+      "capability": "GenAI & LLM Apps",
+      "roles": [
+        "ai",
+        "genai"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "ai-resume"
+      ],
+      "note": "Resume-listed; completed project evaluation/integration not verified."
+    },
+    {
+      "name": "Redux",
+      "capability": "Frontend",
+      "roles": [
+        "sde"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "sde-resume",
+        "frontend-resume"
+      ],
+      "note": "Resume-listed; evidence mapping can strengthen after project/version confirmation."
+    },
+    {
+      "name": "Context API",
+      "capability": "Frontend",
+      "roles": [
+        "sde"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "sde-resume",
+        "frontend-resume"
+      ],
+      "note": "Resume-listed; evidence mapping can strengthen after project/version confirmation."
+    },
+    {
+      "name": "Bootstrap",
+      "capability": "Frontend",
+      "roles": [
+        "sde"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "sde-resume",
+        "frontend-resume"
+      ],
+      "note": "Resume-listed; evidence mapping can strengthen after project/version confirmation."
+    },
+    {
+      "name": "Responsive Design",
+      "capability": "Frontend",
+      "roles": [
+        "sde"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "sde-resume",
+        "frontend-resume"
+      ],
+      "note": "Resume-listed; evidence mapping can strengthen after project/version confirmation."
+    },
+    {
+      "name": "WebSockets",
+      "capability": "Frontend",
+      "roles": [
+        "sde"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "sde-resume",
+        "frontend-resume"
+      ],
+      "note": "Resume-listed; evidence mapping can strengthen after project/version confirmation."
+    },
+    {
+      "name": "AWS",
+      "capability": "Cloud & DevOps",
+      "roles": [
+        "sde",
+        "ai",
+        "genai"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "sde-resume",
+        "frontend-resume"
+      ],
+      "note": "Listed in supplied resume; no reviewed deployment/usage artifact linked yet."
+    },
+    {
+      "name": "Render",
+      "capability": "Cloud & DevOps",
+      "roles": [
+        "sde",
+        "ai",
+        "genai"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "sde-resume",
+        "frontend-resume"
+      ],
+      "note": "Listed in supplied resume; no reviewed deployment/usage artifact linked yet."
+    },
+    {
+      "name": "Railway",
+      "capability": "Cloud & DevOps",
+      "roles": [
+        "sde",
+        "ai",
+        "genai"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "sde-resume",
+        "frontend-resume"
+      ],
+      "note": "Listed in supplied resume; no reviewed deployment/usage artifact linked yet."
+    },
+    {
+      "name": "Postman",
+      "capability": "Cloud & DevOps",
+      "roles": [
+        "sde",
+        "ai",
+        "genai"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "sde-resume",
+        "frontend-resume"
+      ],
+      "note": "Listed in supplied resume; no reviewed deployment/usage artifact linked yet."
+    },
+    {
+      "name": "Swagger",
+      "capability": "Cloud & DevOps",
+      "roles": [
+        "sde",
+        "ai",
+        "genai"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "sde-resume",
+        "frontend-resume"
+      ],
+      "note": "Listed in supplied resume; no reviewed deployment/usage artifact linked yet."
+    },
+    {
+      "name": "XAMPP",
+      "capability": "Cloud & DevOps",
+      "roles": [
+        "sde",
+        "ai",
+        "genai"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "sde-resume",
+        "frontend-resume"
+      ],
+      "note": "Listed in supplied resume; no reviewed deployment/usage artifact linked yet."
+    },
+    {
+      "name": "Chrome DevTools",
+      "capability": "Cloud & DevOps",
+      "roles": [
+        "sde",
+        "ai",
+        "genai"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "sde-resume",
+        "frontend-resume"
+      ],
+      "note": "Listed in supplied resume; no reviewed deployment/usage artifact linked yet."
+    },
+    {
+      "name": "Data Structures & Algorithms",
+      "capability": "CS Fundamentals",
+      "roles": [
+        "sde"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "ai-resume",
+        "sde-resume"
+      ],
+      "note": "Resume-listed fundamentals; no coursework artifact or verified problem count supplied."
+    },
+    {
+      "name": "OOP",
+      "capability": "CS Fundamentals",
+      "roles": [
+        "sde"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "ai-resume",
+        "sde-resume"
+      ],
+      "note": "Resume-listed fundamentals; no coursework artifact or verified problem count supplied."
+    },
+    {
+      "name": "DBMS",
+      "capability": "CS Fundamentals",
+      "roles": [
+        "sde"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "ai-resume",
+        "sde-resume"
+      ],
+      "note": "Resume-listed fundamentals; no coursework artifact or verified problem count supplied."
+    },
+    {
+      "name": "Operating Systems",
+      "capability": "CS Fundamentals",
+      "roles": [
+        "sde"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "ai-resume",
+        "sde-resume"
+      ],
+      "note": "Resume-listed fundamentals; no coursework artifact or verified problem count supplied."
+    },
+    {
+      "name": "Computer Networks",
+      "capability": "CS Fundamentals",
+      "roles": [
+        "sde"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "ai-resume",
+        "sde-resume"
+      ],
+      "note": "Resume-listed fundamentals; no coursework artifact or verified problem count supplied."
+    },
+    {
+      "name": "System Design Basics",
+      "capability": "CS Fundamentals",
+      "roles": [
+        "sde"
+      ],
+      "level": "familiar",
+      "evidence": [],
+      "sources": [
+        "ai-resume",
+        "sde-resume"
+      ],
+      "note": "Resume-listed fundamentals; no coursework artifact or verified problem count supplied."
+    }
+  ],
+  "education": [
+    {
+      "institution": "International Institute of Information Technology (I2IT), Pune",
+      "qualification": "Bachelor of Engineering in Computer Engineering",
+      "completion": "Expected 2027",
+      "result": "CGPA: 7",
+      "sources": [
+        "ai-resume",
+        "python-resume",
+        "sde-resume",
+        "frontend-resume"
+      ]
+    },
+    {
+      "institution": "Sanjivani K.B.P. Polytechnic, Kopargaon",
+      "qualification": "Diploma in Computer Engineering",
+      "completion": "2024",
+      "result": "90.29%",
+      "sources": [
+        "ai-resume",
+        "python-resume",
+        "sde-resume",
+        "frontend-resume"
+      ]
+    }
+  ],
+  "achievements": [
+    {
+      "text": "I secured 2nd place among 50+ teams at TechMantra Hackathon.",
+      "sources": [
+        "python-resume",
+        "sde-resume"
+      ],
+      "state": "resume",
+      "publish": true,
+      "note": "Resume-supported; public credential/date pending."
+    },
+    {
+      "text": "I led a 4-member team for my final-year diploma project.",
+      "sources": [
+        "python-resume",
+        "sde-resume"
+      ],
+      "state": "resume",
+      "publish": true,
+      "note": "Supported by the cited source; not independently rerun."
+    },
+    {
+      "text": "Certifications listed: REST API Testing (Postman), JavaScript from Scratch, AR/VR Bootcamp Acceleration, InnoHack 2.0 at VIT.",
+      "sources": [
+        "python-resume",
+        "sde-resume"
+      ],
+      "state": "resume",
+      "publish": false,
+      "note": "Credential links and exact issuers/dates needed."
+    }
+  ],
+  "lenses": {
+    "balanced": [
+      "investify",
+      "ai-blog-generator",
+      "docmind",
+      "hms-portal",
+      "resolvedesk",
+      "studyforge",
+      "eco-bin",
+      "dining-master"
+    ],
+    "sde": [
+      "investify",
+      "hms-portal",
+      "ai-blog-generator",
+      "docmind",
+      "resolvedesk",
+      "studyforge",
+      "eco-bin",
+      "dining-master"
+    ],
+    "ai": [
+      "docmind",
+      "resolvedesk",
+      "ai-blog-generator",
+      "investify",
+      "hms-portal",
+      "studyforge",
+      "eco-bin",
+      "dining-master"
+    ],
+    "genai": [
+      "ai-blog-generator",
+      "docmind",
+      "resolvedesk",
+      "investify",
+      "hms-portal",
+      "studyforge",
+      "eco-bin",
+      "dining-master"
+    ]
+  },
+  "resumeByRole": {
+    "balanced": "ai",
+    "sde": "sde",
+    "ai": "ai",
+    "genai": "ai"
+  },
+  "todos": [
+    {
+      "id": "profile-evidence",
+      "area": "Profile",
+      "task": "Confirm public internship certificate/LOR and achievement credential links; confirm CGPA scale. Resumes agree on expected 2027 and diploma 90.29% in 2024; old website says 93.06%/2022.",
+      "blockingPublicationOf": "Credential links and any grade scale beyond the stated CGPA 7."
+    },
+    {
+      "id": "sde-pdf",
+      "area": "Resume",
+      "task": "Correct SDE PDF: TechSonix ends March 2025 (user-confirmed), replace LinkedIn placeholder, reconcile older project claims.",
+      "blockingPublicationOf": "Publishing the existing SDE PDF as fully reconciled."
+    },
+    {
+      "id": "deploy",
+      "area": "Deployment",
+      "task": "Confirm final hosting account/domain; existing resume links to pawarnilesh.netlify.app, ownership and redeploy settings not yet verified.",
+      "blockingPublicationOf": "Production canonical URL and deployment."
+    },
+    {
+      "id": "internship-metrics",
+      "area": "Experience",
+      "task": "Add measurable outcomes for both internships, if recorded; supply TechKing work mode. Do not manufacture percentages.",
+      "blockingPublicationOf": "Metric-backed internship claims and TechKing work mode."
+    },
+    {
+      "id": "investify-version",
+      "area": "Investify",
+      "task": "Confirm whether case study should document the newer local version or currently public version. Public backend uses mock market data; newer local code uses provider integrations. Publish matching source only in a separately authorized project task.",
+      "blockingPublicationOf": "Treating local improvements as publicly deployed."
+    },
+    {
+      "id": "investify-auth",
+      "area": "Investify",
+      "task": "Reconcile primary AI resume cookie/CSRF description with current local revocable bearer JWT sessions and older JWT/RBAC resume descriptions. Keep generic authentication copy until confirmed.",
+      "blockingPublicationOf": "Cookie-session, CSRF, three-role RBAC claims."
+    },
+    {
+      "id": "investify-metrics",
+      "area": "Investify",
+      "task": "Reconcile 37 tests in AI resume with newer local verification counts; provide measured latency/users if available. Never reuse live landing-page assets/users/returns figures without evidence.",
+      "blockingPublicationOf": "Current aggregated test counts and product-success metrics."
+    },
+    {
+      "id": "investify-demo",
+      "area": "Investify",
+      "task": "Provide approved demo access or a read-only walkthrough; confirm backend host and deployed commit. Live landing page alone does not verify protected flows.",
+      "blockingPublicationOf": "Backend/live-feature guarantees."
+    },
+    {
+      "id": "blog-identity",
+      "area": "AI Blog Generator",
+      "task": "Confirm whether BlogStack and AI-Enable-Blog-Generator are intended as one project or distinct versions. Public code does not prove nested comments, likes or bookmarking.",
+      "blockingPublicationOf": "BlogStack-only features on the AI Blog Generator case study."
+    },
+    {
+      "id": "blog-evaluation",
+      "area": "AI Blog Generator",
+      "task": "Add recorded generation quality checks, model availability check, latency/cost, retries/rate limits and a guest walkthrough; current code calls gemini-2.5-flash. Confirm backend host.",
+      "blockingPublicationOf": "Evaluation, model reliability, production rate limiting and visitor-access claims."
+    },
+    {
+      "id": "hms-scope",
+      "area": "HMS",
+      "task": "Confirm separate backend repository if one exists. Current repository is a frontend state demo with bundled credentials, mock doctors/beds and in-memory data.",
+      "blockingPublicationOf": "MERN/backend, secure authentication and server real-time queue claims."
+    },
+    {
+      "id": "eco-repo",
+      "area": "ECO-BIN",
+      "task": "Supply repository and contribution details. Confirm message delivery without sending a real message; only static landing scope verified.",
+      "blockingPublicationOf": "SQLite/booking/pickup/backend claims."
+    },
+    {
+      "id": "dining-scope",
+      "area": "Dining Master",
+      "task": "Confirm scope and attribution. Public repository has no SQLite/admin/order backend. Correct broken contacts/assets in a separate project task.",
+      "blockingPublicationOf": "Restaurant management/backend claims."
+    },
+    {
+      "id": "docmind-version",
+      "area": "DocMind",
+      "task": "Confirm use of current pgvector version over older ChromaDB resume; code supports pgvector. Keep superseded stack claims suppressed.",
+      "blockingPublicationOf": "Mixing ChromaDB and pgvector into one architecture."
+    },
+    {
+      "id": "docmind-metrics",
+      "area": "DocMind",
+      "task": "Confirm historical date labels: 38 tests/78% were Sept 14; Sept 29 record has 52 passed, 3 skipped, 77%, different DB scope. Add representative RAG quality/latency/cost evaluation before claiming it.",
+      "blockingPublicationOf": "Current unlabeled counts or statistically meaningful answer-quality claims."
+    },
+    {
+      "id": "resolvedesk-repo",
+      "area": "ResolveDesk",
+      "task": "Provide/publish a reviewable repository or approved demo recording; local implementation exists but no public repo was found.",
+      "blockingPublicationOf": "Public code link; never fabricate a GitHub URL."
+    },
+    {
+      "id": "resolvedesk-eval",
+      "area": "ResolveDesk",
+      "task": "Reconcile resume's completed LangSmith evaluation claim with PHASES.md showing final live evaluation/handoff unfinished.",
+      "blockingPublicationOf": "Completed LangSmith evaluation, trace results and measured latency/token claims."
+    },
+    {
+      "id": "study-version",
+      "area": "StudyForge",
+      "task": "Confirm StudyForge/AI Notes Generator identity and Streamlit versus React/Node resume stack. Repair stale README provider/setup and missing dotenv/PDF module requirements in the project repo.",
+      "blockingPublicationOf": "React/Node architecture, clean-clone reproducibility, evaluation claims."
+    },
+    {
+      "id": "syncboard-version",
+      "area": "SyncBoard",
+      "task": "Provide the actual SyncBoard repository/live link or confirm its relationship to the JS Socket.IO candidate-guide repository. Verify TS/Zustand/Zod/offline-queue claims there.",
+      "blockingPublicationOf": "Advanced SyncBoard features and deployment claims."
+    },
+    {
+      "id": "case-study-artifacts",
+      "area": "Case studies",
+      "task": "Provide approved screenshots/video, ownership details, actual decision rationale and missing metrics for each featured project. Architecture diagrams must follow the verified version.",
+      "blockingPublicationOf": "Invented trade-offs, visual results, outcomes or unverified roles."
+    }
+  ]
+}

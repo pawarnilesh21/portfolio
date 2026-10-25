@@ -1,0 +1,29 @@
+{
+  "name": "Investify-Backend",
+  "url": "https://github.com/pawarnilesh21/Investify-Backend",
+  "branch": "main",
+  "sha": "26d2486ce8b9cecf6ba9a8ff588297938a60e8ec",
+  "readme": null,
+  "paths": [
+    ".gitignore",
+    "config/db.js",
+    "controllers/authController.js",
+    "controllers/dashboardController.js",
+    "controllers/recommendationController.js",
+    "controllers/userController.js",
+    "middleware/auth.js",
+    "middleware/errorHandler.js",
+    "models/Goal.js",
+    "models/InvestmentPlan.js",
+    "models/User.js",
+    "package-lock.json",
+    "package.json",
+    "routes/authRoutes.js",
+    "routes/dashboardRoutes.js",
+    "routes/recommendationRoutes.js",
+    "routes/userRoutes.js",
+    "server.js",
+    "utils/calculateAllocation.js",
+    "utils/financialRules.js"
+  ]
+}
