@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import { ChatMascot } from "./chat-mascot";
 
 type Message = {
   role: "user" | "assistant";
@@ -272,27 +273,13 @@ export function PortfolioChat() {
       <button
         ref={trigger}
         className="chat-trigger"
+        title={open ? "Close portfolio chat" : "Ask about Nilesh"}
         aria-label={open ? "Close portfolio chat" : "Ask about Nilesh"}
         aria-expanded={open}
         aria-controls="portfolio-chat-panel"
         onClick={() => (open ? close() : setOpen(true))}
       >
-        <svg
-          width="26"
-          height="26"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.7"
-          aria-hidden="true"
-        >
-          <path d="M20 11.5a8 8 0 0 1-8 8H5l-3 2v-10a9 9 0 0 1 18 0Z" />
-          <path
-            d="M7 11h.01M11 11h.01M15 11h.01"
-            strokeWidth="3"
-            strokeLinecap="round"
-          />
-        </svg>
+        <ChatMascot />
       </button>
     </div>
   );

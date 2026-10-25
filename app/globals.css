@@ -1728,19 +1728,19 @@ section[id] {
   z-index: 60;
 }
 .chat-trigger {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+  width: 64px;
+  height: 72px;
+  border-radius: 14px;
   display: grid;
   place-items: center;
-  background: var(--accent);
-  color: var(--paper);
-  border: 1px solid var(--accent);
-  box-shadow: 0 6px 24px #101a3830;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  filter: drop-shadow(0 4px 5px #101a3826);
   margin-left: auto;
 }
 .chat-trigger:hover {
-  background: var(--accent-strong);
+  filter: drop-shadow(0 5px 8px #294fc94d);
 }
 .chat-panel {
   width: 410px;
@@ -1959,7 +1959,7 @@ section[id] {
     padding: 16px;
   }
   .chat-trigger {
-    width: 56px;
-    height: 56px;
+    width: 64px;
+    height: 72px;
   }
 }
