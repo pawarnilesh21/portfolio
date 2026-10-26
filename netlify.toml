@@ -4,6 +4,8 @@ publish = "out"
 [build.environment]
 NODE_VERSION = "24"
 NETLIFY_NEXT_PLUGIN_SKIP = "true"
+# Model names are public configuration, not credentials. Keep API keys scanned.
+SECRETS_SCAN_OMIT_KEYS = "GROQ_MODEL"
 
 [functions]
 directory = "netlify/functions"

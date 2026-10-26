@@ -14,6 +14,8 @@ GitHub Actions runs formatting, lint, content validation, chat server tests, bui
 The repository's previous `client/server` implementation remains available in Git history. The current app is at the root. A copy of the earlier local portfolio components is under `legacy/` and excluded from the active build.
 ## If greetings work but project answers fail
 
+`GROQ_MODEL` is a public model identifier, not a secret. A confirmed deployment failure flagged its value (`openai/gpt-oss-20b`) in documentation and the server default after it was configured as secret in Netlify. `netlify.toml` excludes only `GROQ_MODEL` from value scanning using `SECRETS_SCAN_OMIT_KEYS`. API-key scanning and smart detection remain enabled; no paths are excluded. When creating this optional variable, leave “Contains secret values” unchecked. Keep `GROQ_API_KEY` secret.
+
 In Project configuration → Environment variables, confirm `GROQ_API_KEY` has a nonempty Production value available to Functions (or all scopes). A build-only value is insufficient. Trigger a new production deploy after changing it; an existing function deployment will not acquire the new value automatically. Do not share the key in screenshots or chat.
 
 After deploying the latency update, `/api/chat` responses include `X-Chat-Version: latency-v1`. `CHAT_NOT_CONFIGURED` means the function still cannot see the key. `PROVIDER_UNAVAILABLE` with `provider-auth` in function logs means Groq rejected authentication. The log metadata never includes the key. See [Netlify documentation](https://docs.netlify.com/build/functions/environment-variables/).
