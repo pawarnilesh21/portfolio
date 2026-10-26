@@ -1,0 +1,117 @@
+{
+  "measuredAt": "2026-10-26T02:42:37.637Z",
+  "method": "Three interleaved before/after DocMind requests from the same host, same key/model, cache disabled, real Groq. Includes network to Groq; excludes Netlify. Small sample, not p95.",
+  "records": [
+    {
+      "round": 0,
+      "version": "before",
+      "ms": 1229.82,
+      "status": 200,
+      "grounded": true,
+      "sources": [
+        "docmind-1",
+        "docmind-4",
+        "docmind-5"
+      ],
+      "provider": {
+        "status": 200,
+        "promptTokens": 988,
+        "completionTokens": 677,
+        "queueMs": 211.965379,
+        "inferenceMs": 812.462711
+      }
+    },
+    {
+      "round": 0,
+      "version": "after",
+      "ms": 529.36,
+      "status": 200,
+      "grounded": true,
+      "sources": [
+        "docmind-overview",
+        "docmind-1",
+        "docmind-4"
+      ],
+      "provider": {
+        "status": 200,
+        "promptTokens": 907,
+        "completionTokens": 113,
+        "queueMs": 315.976928,
+        "inferenceMs": 178.674852
+      }
+    },
+    {
+      "round": 1,
+      "version": "before",
+      "ms": 1337.59,
+      "status": 200,
+      "grounded": true,
+      "sources": [
+        "docmind-1",
+        "docmind-4",
+        "docmind-5"
+      ],
+      "provider": {
+        "status": 200,
+        "promptTokens": 988,
+        "completionTokens": 626,
+        "queueMs": 346.426927,
+        "inferenceMs": 913.057395
+      }
+    },
+    {
+      "round": 1,
+      "version": "after",
+      "ms": 511.21,
+      "status": 200,
+      "grounded": true,
+      "sources": [
+        "docmind-overview",
+        "docmind-1"
+      ],
+      "provider": {
+        "status": 200,
+        "promptTokens": 907,
+        "completionTokens": 77,
+        "queueMs": 347.210763,
+        "inferenceMs": 128.50789
+      }
+    },
+    {
+      "round": 2,
+      "version": "before",
+      "ms": 1309.36,
+      "status": 200,
+      "grounded": true,
+      "sources": [
+        "docmind-1",
+        "docmind-4",
+        "docmind-5"
+      ],
+      "provider": {
+        "status": 200,
+        "promptTokens": 988,
+        "completionTokens": 756,
+        "queueMs": 319.58257499999996,
+        "inferenceMs": 947.1425479999999
+      }
+    },
+    {
+      "round": 2,
+      "version": "after",
+      "ms": 471.56,
+      "status": 200,
+      "grounded": true,
+      "sources": [
+        "docmind-overview"
+      ],
+      "provider": {
+        "status": 200,
+        "promptTokens": 907,
+        "completionTokens": 47,
+        "queueMs": 341.86519599999997,
+        "inferenceMs": 98.62549600000001
+      }
+    }
+  ]
+}

@@ -29,14 +29,16 @@ Profile samples before: 976.35, 501.74, 627.83 ms. After: 24.57, 2.15, 1.22 ms. 
 
 ## Verification and remaining deployment work
 
-Production export succeeded. All 12 server tests and 11 browser tests passed; typecheck passed. Browser coverage includes four widths, themes, role lenses, resumes and chat recovery. Mock tests establish application behavior, not real-model accuracy across arbitrary questions.
+Production export succeeded. All 12 server tests and 11 browser tests passed; typecheck, lint and formatting passed. Browser coverage includes four widths, themes, role lenses, resumes and chat recovery. Mock tests establish application behavior, not real-model accuracy across arbitrary questions.
 
-The additional interleaved real-Groq benchmark was not executed because automatic approval review hit an account usage limit. No comparison file was produced. The script is retained for a later run.
+Automatic approval review initially hit an account usage limit; it recovered on continuation. The additional benchmark completed: three interleaved uncached DocMind requests per version, same host/key/model. Before: 1229.82, 1337.59, 1309.36 ms; after: 529.36, 511.21, 471.56 ms. Medians: 1309.36 → 511.21 ms, a reduction of 798.15 ms (60.96%). All six responses returned approved DocMind sources, although the selected passages varied. See `evidence/chat-groq-comparison.json`. This small sample suggests a gain for this question, not a universal latency guarantee. The initial slower sample above is retained for transparency.
 
-After uploading this change and completing a Netlify deploy with the Functions key, run:
+Code commit `805463d` was uploaded to GitHub main. After Netlify completes a deploy with the Functions key, run:
 
 ```powershell
 node scripts/benchmark-chat.mjs https://pawarnilesh.netlify.app docs/evidence/chat-latency-after.json
 ```
 
 Check that response headers identify `latency-v1`, supported answers have relevant citations, and no request returns `CHAT_NOT_CONFIGURED`. Deployment verification and a successful end-to-end before/after comparison remain pending; this report does not claim a Netlify speed improvement.
+
+The first probe after push still reached the old handler (no version header), with five missing-key failures and one greeting success. It is saved as `evidence/chat-latency-deployment-pending.json`, not an after-deployment result. GitHub upload alone does not prove Netlify has published the new function.
