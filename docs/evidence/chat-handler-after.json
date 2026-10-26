@@ -1,0 +1,100 @@
+{
+  "measuredAt": "2026-10-25T16:50:54.097Z",
+  "method": "Same local Windows host calling the handler with real Groq requests; excludes Netlify/browser/network-to-site time.",
+  "records": [
+    {
+      "index": 0,
+      "question": "Tell me about Nilesh",
+      "ms": 24.57,
+      "status": 200,
+      "success": true,
+      "sources": [
+        "profile",
+        "availability",
+        "contact"
+      ],
+      "provider": null,
+      "mode": "curated"
+    },
+    {
+      "index": 1,
+      "question": "hi",
+      "ms": 1.77,
+      "status": 200,
+      "success": true,
+      "sources": [],
+      "provider": null,
+      "mode": "greeting"
+    },
+    {
+      "index": 2,
+      "question": "How does DocMind work?",
+      "ms": 2170.06,
+      "status": 200,
+      "success": true,
+      "sources": [
+        "docmind-overview",
+        "docmind-1",
+        "docmind-5"
+      ],
+      "provider": {
+        "ms": 2165,
+        "status": 200,
+        "requestBytes": 4140,
+        "model": "openai/gpt-oss-20b",
+        "effort": "low",
+        "promptTokens": 907,
+        "completionTokens": 107,
+        "finishReason": "stop"
+      },
+      "mode": "groq"
+    },
+    {
+      "index": 3,
+      "question": "Tell me about Nilesh",
+      "ms": 2.15,
+      "status": 200,
+      "success": true,
+      "sources": [
+        "profile",
+        "availability",
+        "contact"
+      ],
+      "provider": null,
+      "mode": "curated"
+    },
+    {
+      "index": 4,
+      "question": "What is Nilesh's expected salary?",
+      "ms": 712.95,
+      "status": 200,
+      "success": true,
+      "sources": [],
+      "provider": {
+        "ms": 711,
+        "status": 200,
+        "requestBytes": 2891,
+        "model": "openai/gpt-oss-20b",
+        "effort": "low",
+        "promptTokens": 639,
+        "completionTokens": 31,
+        "finishReason": "stop"
+      },
+      "mode": "groq"
+    },
+    {
+      "index": 5,
+      "question": "Tell me about Nilesh",
+      "ms": 1.22,
+      "status": 200,
+      "success": true,
+      "sources": [
+        "profile",
+        "availability",
+        "contact"
+      ],
+      "provider": null,
+      "mode": "curated"
+    }
+  ]
+}

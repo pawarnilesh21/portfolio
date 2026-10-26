@@ -23,6 +23,8 @@ export function PortfolioChat() {
   const trigger = useRef<HTMLButtonElement>(null);
   const end = useRef<HTMLDivElement>(null);
   const abort = useRef<AbortController | null>(null);
+  const inFlight = useRef(false);
+  const completedQuestions = useRef<string[]>([]);
   useEffect(() => {
     if (open) input.current?.focus();
   }, [open]);
@@ -63,24 +65,30 @@ export function PortfolioChat() {
   }
   async function send(value: string) {
     const text = value.trim();
-    if (!text || text.length > 1000 || busy) return;
-    const history = messages
-      .filter((m) => m.role === "user")
-      .slice(-6)
-      .map((m) => m.text);
+    if (!text || text.length > 1000 || inFlight.current) return;
+    inFlight.current = true;
+    const history = completedQuestions.current.slice(-2);
     setMessages((m) => [...m, { role: "user", text }]);
     setQuestion("");
     setBusy(true);
-    abort.current = new AbortController();
-    const timeout = setTimeout(() => abort.current?.abort(), 25_000);
+    const controller = new AbortController();
+    abort.current = controller;
+    const timeout = setTimeout(() => controller.abort(), 15_000);
     try {
       const response = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question: text, history }),
-        signal: abort.current.signal,
+        signal: controller.signal,
       });
-      const data = await response.json();
+      // Netlify gateway/rate-limit responses can be plain text or HTML.
+      const data = await response.json().catch(() => null);
+      if (!data)
+        throw new Error(
+          response.status === 429
+            ? "Too many requests. Please wait a minute and try again."
+            : "The server could not complete this request. Please try again shortly.",
+        );
       if (!response.ok || typeof data.answer !== "string")
         throw new Error(
           data.error || "The assistant is unavailable. Please try again.",
@@ -89,6 +97,11 @@ export function PortfolioChat() {
         ...m,
         { role: "assistant", text: data.answer, sources: data.sources },
       ]);
+      if (data.sources?.length)
+        completedQuestions.current = [
+          ...completedQuestions.current,
+          text,
+        ].slice(-2);
     } catch (error) {
       setMessages((m) => [
         ...m,
@@ -96,14 +109,17 @@ export function PortfolioChat() {
           role: "assistant",
           error: true,
           text:
-            error instanceof Error && error.name !== "AbortError"
-              ? error.message
-              : "The request timed out. Please try again.",
+            error instanceof TypeError
+              ? "Could not connect to the portfolio server. Check your connection and try again."
+              : error instanceof Error && error.name !== "AbortError"
+                ? error.message
+                : "The server took too long to respond. Please try again shortly.",
         },
       ]);
       setQuestion(text);
     } finally {
       clearTimeout(timeout);
+      inFlight.current = false;
       setBusy(false);
       input.current?.focus();
     }
@@ -261,6 +277,7 @@ export function PortfolioChat() {
               disabled={busy || messages.length === 0}
               onClick={() => {
                 setMessages([]);
+                completedQuestions.current = [];
                 setQuestion("");
                 input.current?.focus();
               }}

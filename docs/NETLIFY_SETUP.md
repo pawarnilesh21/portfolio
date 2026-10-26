@@ -12,3 +12,8 @@ Repository: https://github.com/pawarnilesh21/portfolio
 GitHub Actions runs formatting, lint, content validation, chat server tests, build, typecheck and browser tests on pushes and pull requests. No Groq key is required for CI; those tests mock the provider. Netlify's Git integration automatically builds/deploys changes pushed to `main` after the repository is connected. These are separate pipelines: GitHub Actions does not gate Netlify deploys by default. Enable a required-check deployment policy in your hosting workflow if you need that gate.
 
 The repository's previous `client/server` implementation remains available in Git history. The current app is at the root. A copy of the earlier local portfolio components is under `legacy/` and excluded from the active build.
+## If greetings work but project answers fail
+
+In Project configuration → Environment variables, confirm `GROQ_API_KEY` has a nonempty Production value available to Functions (or all scopes). A build-only value is insufficient. Trigger a new production deploy after changing it; an existing function deployment will not acquire the new value automatically. Do not share the key in screenshots or chat.
+
+After deploying the latency update, `/api/chat` responses include `X-Chat-Version: latency-v1`. `CHAT_NOT_CONFIGURED` means the function still cannot see the key. `PROVIDER_UNAVAILABLE` with `provider-auth` in function logs means Groq rejected authentication. The log metadata never includes the key. See [Netlify documentation](https://docs.netlify.com/build/functions/environment-variables/).

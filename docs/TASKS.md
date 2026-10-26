@@ -74,3 +74,14 @@ Scope: implement approved Direction A in the actual repository, preserve the ori
 - [x] Three live grounding cases plus a real browser TechSonix dates/citation check passed.
 - [ ] Verify the Netlify function on the eventual public deployment.
 
+## Chat latency investigation — current status
+- [x] Probe deployed endpoint: missing runtime key confirmed; greeting works.
+- [x] Record real-Groq local baseline and optimized handler samples.
+- [x] Add exact approved FAQ responses, precomputed retrieval and bounded answer cache.
+- [x] Tighten timeouts, output validation, history handling and recoverable UI errors.
+- [x] Add timing diagnostics without logging messages or credentials.
+- [x] Pass 12 server tests, 11 browser tests, production build and typecheck.
+- [x] Document measured gains and limitations in CHAT_LATENCY_REPORT.md.
+- [ ] Upload latency changes to main and complete Netlify deployment.
+- [ ] Verify Functions/Production key on the new deployment and measure successful live answers.
+- [ ] Run additional interleaved Groq comparison (previous attempt blocked by approval-review account usage limit).

@@ -1,0 +1,85 @@
+{
+  "measuredAt": "2026-10-25T16:40:32.507Z",
+  "origin": "https://pawarnilesh.netlify.app",
+  "method": "Sequential HTTP requests from the same Windows host; includes network and server time. Not a cold-start guarantee or field percentile.",
+  "records": [
+    {
+      "index": 0,
+      "question": "Tell me about Nilesh",
+      "ms": 1767,
+      "status": 503,
+      "success": false,
+      "sources": [],
+      "error": "The portfolio assistant is not connected yet. Please try again later or contact Nilesh directly.",
+      "timing": null,
+      "mode": null,
+      "version": null,
+      "requestId": "01M5SYYF252EZNP8K9X95SSQW2"
+    },
+    {
+      "index": 1,
+      "question": "hi",
+      "ms": 530,
+      "status": 200,
+      "success": true,
+      "sources": [],
+      "error": null,
+      "timing": null,
+      "mode": null,
+      "version": null,
+      "requestId": "01M5SYYHXW50S8XGMQH6KW4FJQ"
+    },
+    {
+      "index": 2,
+      "question": "How does DocMind work?",
+      "ms": 424,
+      "status": 503,
+      "success": false,
+      "sources": [],
+      "error": "The portfolio assistant is not connected yet. Please try again later or contact Nilesh directly.",
+      "timing": null,
+      "mode": null,
+      "version": null,
+      "requestId": "01M5SYYKXNJZ0RSS834NXX58GN"
+    },
+    {
+      "index": 3,
+      "question": "Tell me about Nilesh",
+      "ms": 440,
+      "status": 503,
+      "success": false,
+      "sources": [],
+      "error": "The portfolio assistant is not connected yet. Please try again later or contact Nilesh directly.",
+      "timing": null,
+      "mode": null,
+      "version": null,
+      "requestId": "01M5SYYNSXWMW6SRMXXHHKYZAM"
+    },
+    {
+      "index": 4,
+      "question": "How does DocMind work?",
+      "ms": 370,
+      "status": 503,
+      "success": false,
+      "sources": [],
+      "error": "The portfolio assistant is not connected yet. Please try again later or contact Nilesh directly.",
+      "timing": null,
+      "mode": null,
+      "version": null,
+      "requestId": "01M5SYYQPSEK6EK17SZ0PYNGMZ"
+    },
+    {
+      "index": 5,
+      "question": "Tell me about Nilesh",
+      "ms": 410,
+      "status": 503,
+      "success": false,
+      "sources": [],
+      "error": "The portfolio assistant is not connected yet. Please try again later or contact Nilesh directly.",
+      "timing": null,
+      "mode": null,
+      "version": null,
+      "requestId": "01M5SYYSHAS0KAC72ZJ26X95DR"
+    }
+  ]
+}

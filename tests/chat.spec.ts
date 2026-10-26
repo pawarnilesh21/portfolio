@@ -59,3 +59,53 @@ test("chat fits mobile and shows recoverable provider error", async ({
     }),
   ).toBeTruthy();
 });
+test("non-JSON gateway errors recover and failed questions do not enter history", async ({
+  page,
+}) => {
+  const bodies: { question: string; history: string[] }[] = [];
+  await page.route("**/api/chat", (route) => {
+    bodies.push(route.request().postDataJSON());
+    return bodies.length === 1
+      ? route.fulfill({
+          status: 502,
+          contentType: "text/html",
+          body: "<h1>Gateway error</h1>",
+        })
+      : route.fulfill({
+          json: {
+            answer: "Nilesh builds backend systems.",
+            sources: [
+              { id: "profile", title: "About Nilesh", href: "/#about" },
+            ],
+          },
+        });
+  });
+  await page.goto("/");
+  await page
+    .getByRole("button", { name: "Ask about Nilesh", exact: true })
+    .click();
+  await page.getByRole("textbox").fill("First failed question");
+  await page.getByRole("button", { name: "Send question" }).click();
+  await expect(page.getByRole("log")).toContainText(
+    "server could not complete",
+  );
+  await page.getByRole("textbox").fill("Who is Nilesh?");
+  await page.getByRole("button", { name: "Send question" }).click();
+  await expect(page.getByRole("log")).toContainText("Nilesh builds backend");
+  expect(bodies[1].history).toEqual([]);
+});
+test("network failure is understandable and leaves the question available to retry", async ({
+  page,
+}) => {
+  await page.route("**/api/chat", (route) => route.abort("failed"));
+  await page.goto("/");
+  await page
+    .getByRole("button", { name: "Ask about Nilesh", exact: true })
+    .click();
+  await page.getByRole("textbox").fill("Who is Nilesh?");
+  await page.getByRole("button", { name: "Send question" }).click();
+  await expect(page.getByRole("log")).toContainText(
+    "Could not connect to the portfolio server",
+  );
+  await expect(page.getByRole("textbox")).toHaveValue("Who is Nilesh?");
+});

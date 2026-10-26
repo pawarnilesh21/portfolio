@@ -1,0 +1,127 @@
+{
+  "measuredAt": "2026-10-25T16:41:47.672Z",
+  "method": "Same local Windows host calling the handler with real Groq requests; excludes Netlify/browser/network-to-site time.",
+  "records": [
+    {
+      "index": 0,
+      "question": "Tell me about Nilesh",
+      "ms": 976.35,
+      "status": 200,
+      "success": true,
+      "sources": [
+        "profile",
+        "availability",
+        "contact"
+      ],
+      "provider": {
+        "ms": 869,
+        "status": 200,
+        "requestBytes": 2368,
+        "model": "openai/gpt-oss-20b",
+        "effort": "default",
+        "promptTokens": 574,
+        "completionTokens": 145,
+        "finishReason": "stop"
+      },
+      "mode": null
+    },
+    {
+      "index": 1,
+      "question": "hi",
+      "ms": 2.22,
+      "status": 200,
+      "success": true,
+      "sources": [],
+      "provider": null,
+      "mode": null
+    },
+    {
+      "index": 2,
+      "question": "How does DocMind work?",
+      "ms": 1966.72,
+      "status": 200,
+      "success": true,
+      "sources": [
+        "docmind-1",
+        "docmind-4",
+        "docmind-5"
+      ],
+      "provider": {
+        "ms": 1964,
+        "status": 200,
+        "requestBytes": 4535,
+        "model": "openai/gpt-oss-20b",
+        "effort": "default",
+        "promptTokens": 988,
+        "completionTokens": 422,
+        "finishReason": "stop"
+      },
+      "mode": null
+    },
+    {
+      "index": 3,
+      "question": "Tell me about Nilesh",
+      "ms": 501.74,
+      "status": 200,
+      "success": true,
+      "sources": [
+        "profile",
+        "availability",
+        "contact"
+      ],
+      "provider": {
+        "ms": 496,
+        "status": 200,
+        "requestBytes": 2368,
+        "model": "openai/gpt-oss-20b",
+        "effort": "default",
+        "promptTokens": 574,
+        "completionTokens": 145,
+        "finishReason": "stop"
+      },
+      "mode": null
+    },
+    {
+      "index": 4,
+      "question": "What is Nilesh's expected salary?",
+      "ms": 717.71,
+      "status": 200,
+      "success": true,
+      "sources": [],
+      "provider": {
+        "ms": 715,
+        "status": 200,
+        "requestBytes": 3071,
+        "model": "openai/gpt-oss-20b",
+        "effort": "default",
+        "promptTokens": 717,
+        "completionTokens": 152,
+        "finishReason": "stop"
+      },
+      "mode": null
+    },
+    {
+      "index": 5,
+      "question": "Tell me about Nilesh",
+      "ms": 627.83,
+      "status": 200,
+      "success": true,
+      "sources": [
+        "profile",
+        "availability",
+        "contact"
+      ],
+      "provider": {
+        "ms": 620,
+        "status": 200,
+        "requestBytes": 2368,
+        "model": "openai/gpt-oss-20b",
+        "effort": "default",
+        "promptTokens": 574,
+        "completionTokens": 145,
+        "finishReason": "stop"
+      },
+      "mode": null
+    }
+  ]
+}

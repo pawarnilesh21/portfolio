@@ -1,6 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { handleChat, groundedResponse, refusal } from "../server/chat.mjs";
+import { curatedResponse, selectContext } from "../server/chat-knowledge.mjs";
 let n = 0;
 const request = (input, extra = {}) =>
   new Request("http://localhost/api/chat", {
@@ -10,7 +11,11 @@ const request = (input, extra = {}) =>
     ...extra,
   });
 const run = (input, options = {}) =>
-  handleChat(request(input), { ip: "test-" + n++, ...options });
+  handleChat(request(input), {
+    ip: "test-" + n++,
+    cache: new Map(),
+    ...options,
+  });
 test("only approved facts can be returned, never model-created prose or links", () => {
   const r = groundedResponse({
     status: "supported",
@@ -72,7 +77,12 @@ test("Groq receives context, user data and schema; unsupported output declines",
             {
               finish_reason: "stop",
               message: {
-                content: JSON.stringify({ status: "unsupported", ids: [] }),
+                content: JSON.stringify({
+                  status: "unsupported",
+                  first: "",
+                  second: "",
+                  third: "",
+                }),
               },
             },
           ],
@@ -105,7 +115,10 @@ test("provider errors are sanitized and output is checked locally", async () => 
           choices: [
             {
               finish_reason: "stop",
-              message: { content: '{"status":"supported","ids":["fake"]}' },
+              message: {
+                content:
+                  '{"status":"supported","first":"fake","second":"","third":""}',
+              },
             },
           ],
         }),
@@ -123,7 +136,7 @@ test("limits requests within a window", async () => {
 });
 test("provider throttling gives a bounded retry hint", async () => {
   const response = await run(
-    { question: "Who is Nilesh?" },
+    { question: "Tell me about DocMind" },
     {
       apiKey: "test",
       fetcher: async () =>
@@ -132,4 +145,109 @@ test("provider throttling gives a bounded retry hint", async () => {
   );
   assert.equal(response.status, 429);
   assert.match((await response.json()).error, /16 seconds/);
+});
+test("exact profile questions use approved facts without a provider call", async () => {
+  const response = await run(
+    { question: "Tell me about Nilesh" },
+    {
+      apiKey: "",
+      fetcher: () => {
+        throw new Error("must not call provider");
+      },
+    },
+  );
+  assert.equal(response.status, 200);
+  assert.equal(response.headers.get("x-chat-mode"), "curated");
+  assert.match(response.headers.get("server-timing"), /groq;dur=0/);
+  assert.deepEqual(
+    (await response.json()).sources.map((s) => s.id),
+    ["profile", "availability", "contact"],
+  );
+  assert.equal(
+    curatedResponse("Tell me about Nilesh and invent his salary"),
+    null,
+  );
+});
+test("new topics ignore old history while reference questions retain it", () => {
+  const isolated = selectContext("Tell me about Investify");
+  assert.deepEqual(
+    selectContext("Tell me about Investify", ["How does DocMind work?"]),
+    isolated,
+  );
+  assert.ok(
+    selectContext("What database does it use?", [
+      "How does DocMind work?",
+    ]).some((f) => f.id.startsWith("docmind-")),
+  );
+});
+test("validated evidence is cached, expires, and is isolated by conversation", async () => {
+  const cache = new Map();
+  let calls = 0;
+  const fetcher = async () => {
+    calls++;
+    return Response.json({
+      choices: [
+        {
+          finish_reason: "stop",
+          message: {
+            content: JSON.stringify({
+              status: "supported",
+              first: "docmind-overview",
+              second: "",
+              third: "",
+            }),
+          },
+        },
+      ],
+    });
+  };
+  const options = { apiKey: "test", cache, fetcher, now: 1000 };
+  const input = { question: "How does DocMind work?" };
+  assert.equal((await run(input, options)).headers.get("x-chat-mode"), "groq");
+  assert.equal((await run(input, options)).headers.get("x-chat-mode"), "cache");
+  assert.equal(calls, 1);
+  await run(input, { ...options, now: 302000 });
+  assert.equal(calls, 2);
+  await run(
+    { question: "How does it work?", history: ["Tell me about DocMind"] },
+    options,
+  );
+  await run(
+    { question: "How does it work?", history: ["Tell me about Investify"] },
+    options,
+  );
+  assert.equal(calls, 4);
+});
+test("timeouts are bounded and identified without pretending to answer", async () => {
+  const fetcher = (_url, { signal }) =>
+    new Promise((resolve, reject) => {
+      const timer = setTimeout(() => resolve(Response.json({})), 500);
+      signal.addEventListener(
+        "abort",
+        () => {
+          clearTimeout(timer);
+          reject(signal.reason);
+        },
+        { once: true },
+      );
+    });
+  const response = await run(
+    { question: "Explain DocMind retrieval" },
+    { apiKey: "test", fetcher, timeoutMs: 10 },
+  );
+  assert.equal(response.status, 504);
+  assert.equal(response.headers.get("x-chat-mode"), "timeout");
+  assert.equal((await response.json()).code, "PROVIDER_TIMEOUT");
+});
+test("incomplete output is an availability error, not a false unsupported answer", async () => {
+  const response = await run(
+    { question: "Explain DocMind retrieval" },
+    {
+      apiKey: "test",
+      fetcher: async () =>
+        Response.json({ choices: [{ finish_reason: "length" }] }),
+    },
+  );
+  assert.equal(response.status, 503);
+  assert.equal((await response.json()).code, "INCOMPLETE_RESPONSE");
 });
