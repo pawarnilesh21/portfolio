@@ -1,0 +1,74 @@
+[
+  { "question": "Where is Nilesh located?", "expected": ["profile"] },
+  { "question": "Which college does he attend?", "expected": ["education-0"] },
+  { "question": "What is his CGPA?", "expected": ["education-0"] },
+  { "question": "When will he graduate?", "expected": ["education-0"] },
+  {
+    "question": "What percentage did he get in his diploma?",
+    "expected": ["education-1"]
+  },
+  { "question": "What awards has Nilesh won?", "expected": ["achievement-0"] },
+  { "question": "Has he led a team?", "expected": ["achievement-1"] },
+  {
+    "question": "Is he open to working remotely?",
+    "expected": ["availability"]
+  },
+  { "question": "How can a recruiter reach him?", "expected": ["contact"] },
+  { "question": "What did he do at Tech Sonix?", "expected": ["techsonix"] },
+  { "question": "What did he do at Tech King?", "expected": ["techking"] },
+  {
+    "question": "How does Doc Mind create embeddings?",
+    "expected": ["docmind-4"]
+  },
+  {
+    "question": "Does DocMind use ChromaDB or pgvector?",
+    "expected": ["docmind-9"]
+  },
+  {
+    "question": "Does DocMind support scanned PDFs?",
+    "expected": ["docmind-8"]
+  },
+  { "question": "Is DocMind publicly deployed?", "expected": ["docmind-12"] },
+  {
+    "question": "Does Resolve Desk send real payments?",
+    "expected": ["resolvedesk-9"]
+  },
+  {
+    "question": "Are Investify live stock prices real?",
+    "expected": ["investify-2"]
+  },
+  {
+    "question": "Does HMS Portal have a backend?",
+    "expected": ["hms-portal-2"]
+  },
+  {
+    "question": "Will HMS Portal data survive a refresh?",
+    "expected": ["hms-portal-8"]
+  },
+  {
+    "question": "Does AI Blog Generator use RAG?",
+    "expected": ["ai-blog-generator-2"]
+  },
+  {
+    "question": "What can AI Notes Generator produce?",
+    "expected": ["studyforge-overview"]
+  },
+  {
+    "question": "What database does it use?",
+    "history": ["Tell me about Investify", "Tell me about DocMind"],
+    "expected": ["docmind-4"],
+    "onlyProject": "docmind"
+  },
+  {
+    "question": "And its limitations?",
+    "history": ["Tell me about DocMind"],
+    "expected": ["docmind-8"],
+    "onlyProject": "docmind"
+  },
+  {
+    "question": "How does Investify store its data?",
+    "history": ["Tell me about DocMind"],
+    "expected": ["investify-4"],
+    "onlyProject": "investify"
+  }
+]

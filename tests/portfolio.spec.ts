@@ -87,10 +87,14 @@ test("theme survives reload, mobile navigation and keyboard entry work", async (
 test("static content, headers, redirects and missing pages", async ({
   browser,
   request,
+  baseURL,
 }) => {
-  const context = await browser.newContext({ javaScriptEnabled: false });
+  const context = await browser.newContext({
+    javaScriptEnabled: false,
+    baseURL,
+  });
   const page = await context.newPage();
-  await page.goto("http://127.0.0.1:3100/");
+  await page.goto("/");
   await expect(page.locator(".project-row")).toHaveCount(5);
   await context.close();
   const home = await request.get("/");

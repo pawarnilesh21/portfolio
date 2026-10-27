@@ -87,3 +87,15 @@ Scope: implement approved Direction A in the actual repository, preserve the ori
 - [ ] Verify Functions/Production key on the new deployment and measure successful live answers.
 - [x] Complete additional interleaved Groq comparison after approval review recovered: median 1309.36 → 511.21 ms.
 
+## Local chatbot accuracy upgrade — 27 October 2026
+- [x] Record a 24-case retrieval baseline (15/24).
+- [x] Improve vocabulary matching, project isolation, comparisons and follow-up resolution.
+- [x] Add grounded student FAQs and clarify ambiguous project references.
+- [x] Strengthen evidence validation and context-based cache invalidation.
+- [x] Pass all 24 retrieval checks and 17 server regression tests.
+- [x] Complete final live-model checks: 14/14 passed with request pacing.
+- [ ] Owner reviews local preview and CHAT_QUALITY_LOCAL.md.
+- [x] Owner explicitly approved GitHub upload with commit message "Chatbot Improve" (27 October 2026).
+
+- [x] Complete all 11 browser checks; fix a hardcoded test port and verify the affected case.
+

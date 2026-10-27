@@ -1,0 +1,339 @@
+{
+  "method": "Fixed retrieval regression set; expected evidence within eight passages, plus project isolation where specified. Not end-to-end answer accuracy.",
+  "passed": 15,
+  "total": 24,
+  "records": [
+    {
+      "question": "Where is Nilesh located?",
+      "expected": [
+        "profile"
+      ],
+      "retrieved": [
+        "profile",
+        "availability",
+        "contact"
+      ],
+      "pass": true
+    },
+    {
+      "question": "Which college does he attend?",
+      "expected": [
+        "education-0"
+      ],
+      "retrieved": [
+        "education-0",
+        "education-1"
+      ],
+      "pass": true
+    },
+    {
+      "question": "What is his CGPA?",
+      "expected": [
+        "education-0"
+      ],
+      "retrieved": [
+        "education-0"
+      ],
+      "pass": true
+    },
+    {
+      "question": "When will he graduate?",
+      "expected": [
+        "education-0"
+      ],
+      "retrieved": [
+        "docmind-2"
+      ],
+      "pass": false
+    },
+    {
+      "question": "What percentage did he get in his diploma?",
+      "expected": [
+        "education-1"
+      ],
+      "retrieved": [
+        "education-1",
+        "achievement-1"
+      ],
+      "pass": true
+    },
+    {
+      "question": "What awards has Nilesh won?",
+      "expected": [
+        "achievement-0"
+      ],
+      "retrieved": [
+        "profile",
+        "contact",
+        "availability",
+        "docmind-1",
+        "docmind-8",
+        "hms-portal-8",
+        "resolvedesk-9"
+      ],
+      "pass": false
+    },
+    {
+      "question": "Has he led a team?",
+      "expected": [
+        "achievement-1"
+      ],
+      "retrieved": [
+        "achievement-1",
+        "contact",
+        "achievement-0",
+        "docmind-1",
+        "docmind-8",
+        "hms-portal-8",
+        "resolvedesk-9"
+      ],
+      "pass": true
+    },
+    {
+      "question": "Is he open to working remotely?",
+      "expected": [
+        "availability"
+      ],
+      "retrieved": [],
+      "pass": false
+    },
+    {
+      "question": "How can a recruiter reach him?",
+      "expected": [
+        "contact"
+      ],
+      "retrieved": [],
+      "pass": false
+    },
+    {
+      "question": "What did he do at Tech Sonix?",
+      "expected": [
+        "techsonix"
+      ],
+      "retrieved": [],
+      "pass": false
+    },
+    {
+      "question": "What did he do at Tech King?",
+      "expected": [
+        "techking"
+      ],
+      "retrieved": [],
+      "pass": false
+    },
+    {
+      "question": "How does Doc Mind create embeddings?",
+      "expected": [
+        "docmind-4"
+      ],
+      "retrieved": [
+        "docmind-4",
+        "ai-blog-generator-1",
+        "docmind-5",
+        "resolvedesk-2",
+        "skills-demonstrated"
+      ],
+      "pass": true
+    },
+    {
+      "question": "Does DocMind use ChromaDB or pgvector?",
+      "expected": [
+        "docmind-9"
+      ],
+      "retrieved": [
+        "docmind-4",
+        "docmind-9",
+        "docmind-overview",
+        "docmind-7",
+        "docmind-1",
+        "docmind-2",
+        "docmind-5",
+        "docmind-8"
+      ],
+      "pass": true
+    },
+    {
+      "question": "Does DocMind support scanned PDFs?",
+      "expected": [
+        "docmind-8"
+      ],
+      "retrieved": [
+        "docmind-8",
+        "docmind-1",
+        "docmind-2",
+        "docmind-7",
+        "docmind-overview",
+        "docmind-4",
+        "docmind-5",
+        "docmind-9"
+      ],
+      "pass": true
+    },
+    {
+      "question": "Is DocMind publicly deployed?",
+      "expected": [
+        "docmind-12"
+      ],
+      "retrieved": [
+        "docmind-overview",
+        "docmind-1",
+        "docmind-2",
+        "docmind-4",
+        "docmind-5",
+        "docmind-7",
+        "docmind-8",
+        "docmind-9"
+      ],
+      "pass": false
+    },
+    {
+      "question": "Does Resolve Desk send real payments?",
+      "expected": [
+        "resolvedesk-9"
+      ],
+      "retrieved": [
+        "resolvedesk-9",
+        "ai-blog-generator-4",
+        "hms-portal-9",
+        "resolvedesk-1"
+      ],
+      "pass": true
+    },
+    {
+      "question": "Are Investify live stock prices real?",
+      "expected": [
+        "investify-2"
+      ],
+      "retrieved": [
+        "investify-overview",
+        "investify-2",
+        "investify-7",
+        "investify-1",
+        "investify-4",
+        "investify-5",
+        "investify-8",
+        "investify-10"
+      ],
+      "pass": true
+    },
+    {
+      "question": "Does HMS Portal have a backend?",
+      "expected": [
+        "hms-portal-2"
+      ],
+      "retrieved": [
+        "hms-portal-7",
+        "hms-portal-12",
+        "hms-portal-overview",
+        "hms-portal-1",
+        "hms-portal-2",
+        "hms-portal-4",
+        "hms-portal-5",
+        "hms-portal-8"
+      ],
+      "pass": true
+    },
+    {
+      "question": "Will HMS Portal data survive a refresh?",
+      "expected": [
+        "hms-portal-8"
+      ],
+      "retrieved": [
+        "hms-portal-4",
+        "hms-portal-5",
+        "hms-portal-8",
+        "hms-portal-overview",
+        "hms-portal-1",
+        "hms-portal-2",
+        "hms-portal-7",
+        "hms-portal-9"
+      ],
+      "pass": true
+    },
+    {
+      "question": "Does AI Blog Generator use RAG?",
+      "expected": [
+        "ai-blog-generator-2"
+      ],
+      "retrieved": [
+        "ai-blog-generator-overview",
+        "ai-blog-generator-1",
+        "ai-blog-generator-2",
+        "ai-blog-generator-4",
+        "ai-blog-generator-5",
+        "ai-blog-generator-7",
+        "ai-blog-generator-8",
+        "ai-blog-generator-9"
+      ],
+      "pass": true
+    },
+    {
+      "question": "What can AI Notes Generator produce?",
+      "expected": [
+        "studyforge-overview"
+      ],
+      "retrieved": [
+        "studyforge-overview",
+        "ai-blog-generator-overview",
+        "ai-blog-generator-1",
+        "ai-blog-generator-2",
+        "ai-blog-generator-4",
+        "ai-blog-generator-5",
+        "ai-blog-generator-7",
+        "ai-blog-generator-8"
+      ],
+      "pass": true
+    },
+    {
+      "question": "What database does it use?",
+      "expected": [
+        "docmind-4"
+      ],
+      "retrieved": [
+        "docmind-4",
+        "docmind-7",
+        "investify-4",
+        "investify-7",
+        "docmind-overview",
+        "docmind-1",
+        "docmind-2",
+        "docmind-5"
+      ],
+      "pass": false
+    },
+    {
+      "question": "And its limitations?",
+      "expected": [
+        "docmind-8"
+      ],
+      "retrieved": [
+        "docmind-1",
+        "docmind-12",
+        "docmind-overview",
+        "docmind-2",
+        "docmind-4",
+        "docmind-5",
+        "docmind-7",
+        "docmind-8"
+      ],
+      "pass": true
+    },
+    {
+      "question": "How does Investify store its data?",
+      "expected": [
+        "investify-4"
+      ],
+      "retrieved": [
+        "investify-4",
+        "investify-5",
+        "docmind-4",
+        "docmind-5",
+        "ai-blog-generator-4",
+        "hms-portal-4",
+        "investify-2",
+        "investify-7"
+      ],
+      "pass": false
+    }
+  ]
+}
